@@ -1,22 +1,24 @@
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #113BF4 ;
     color: #fff;
     padding: 15px 0;
+
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+  
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
+   
 }
 
 .brand {
@@ -35,7 +37,7 @@ body {
 }
 
 .navbar-links a:hover {
-    color: #ff0000;
+    color: black;
 }
 
 .hamburger-menu {
@@ -52,8 +54,18 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .container{
+        min-height: 80px;
+    }
     .navbar-links {
         display: none;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .navbar-links.active {
+        display: flex;
+        flex-direction: column;
     }
     .hamburger-menu {
         display: flex;
