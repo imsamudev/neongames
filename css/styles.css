@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "oswald", sans-serif;
 }
 
 :root {
@@ -12,11 +12,19 @@
 }
 
 body {
-  background-color: rgb(20, 20, 20);
+  background: radial-gradient(
+    circle,
+    rgba(34, 34, 34, 1) 15%,
+    rgba(17, 17, 17, 1) 100%
+  );
 }
 
 .navbar {
-  background-color: #113bf4;
+  background-image: linear-gradient(
+    160deg,
+    var(--azul-electrico) 0%,
+    var(--morado-oscuro) 100%
+  );
   color: #fff;
   padding: 15px 0;
 }
@@ -64,60 +72,57 @@ body {
 
 /* todo tamaño y sección se ajustará cuando trabajemos en la página completa, varía del grid y responsive, por lo mismo, dejo el código acá sabiendo que podremos emplearlo en otra página */
 
-.cards_section {
+.cards-section {
   width: 80%;
-  /* aquí trabajaremos en grid, necesito más contenido y el acuerdo entre todos para ver en cuantas secciones se dividirá ésta página para proseguir ésta seccion de productos */
   display: grid;
   gap: 0.625rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.card_container_fondo {
+.card {
   width: 310px;
   height: 410px;
   background-image: linear-gradient(
     180deg,
     var(--azul-cielo) 0%,
-    var(--morado-oscuro) 100%
+    var(--azul-electrico) 30%,
+    var(--morado-oscuro) 60%,
+    var(--rosa-intenso) 100%
   );
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   margin: 1.25rem;
+  transition: all 0.3s;
 }
 
-.card_container {
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: #8600d8 0px 0px 50px;
+}
+.card__container {
   width: 300px;
   height: 400px;
   border-radius: 10px;
-  background-color: black;
-}
-.card {
-  height: 100%;
-  width: 100%;
+  background-color: rgb(20, 20, 20);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-img {
+.card__image {
   width: 100%;
   height: 70%;
   object-fit: cover;
   border: 1px solid var(--morado-oscuro);
 }
-.card_container_fondo:hover {
-  transform: scale(1.05);
-  transition: all 0.3s;
-  box-shadow: 0px 0px 50px 5px var(--morado-oscuro);
-}
 
-h1 {
-  color: var(--rosa-intenso);
+.card__title {
+  color: white;
   text-shadow: -2px 1px 3px var(--morado-oscuro);
+  text-transform: uppercase;
 }
 
 /* cierro card section */
