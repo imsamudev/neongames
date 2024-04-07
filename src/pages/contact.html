@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="/src/css/contact/contact.css">
+</head>
+    <body>
+        <section id="contact-section">
+            <h1>
+            ¡Completá el formulario para poder contactarte!
+            </h1>
+            <form id="contact-form" onSubmit={handleSendEmail}>
+                <div id="form-fields">
+                    <div>
+                        <label htmlFor="contact_input--name">Nombre:</label>
+                        <input
+                            type="text"
+                            id="contact_input--name"
+                            name="from_name"
+                            minLength={0}
+                            maxLength={30}
+                            required
+                            placeholder="Tu nombre..."
+                        />
+                        <label htmlFor="contact_input--email">Correo:</label>
+                        <input
+                            type="text"
+                            id="contact_input--email"
+                            name="from_email"
+                            minLength={0}
+                            maxLength={30}
+                            required
+                            placeholder="Tu correo..."
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="contact_input--message">¡Envianos un mensaje!</label>
+                        <textarea
+                            name="from_message"
+                            id="contact_input--message"
+                            rows="10"
+                            minLength={0}
+                            maxLength={500}
+                            required
+                            placeholder="Tu mensaje..."
+                        ></textarea>
+                    </div>
+                </div>
+                <button id="form-send-button" type="submit">
+                    ¡Enviar!
+                </button>
+                <!-- <div>
+                    {submissionStatus === 'success' && (
+                    <Alert variant="filled" severity="success">
+                        {spanishLanguage ? "¡Mensaje enviado exitosamente!" : "Message sent successfully!"}
+                    </Alert>
+                    )}
+                    {submissionStatus === 'error' && (
+                    <Alert variant="filled" severity="error">
+                        {spanishLanguage ? "¡Hubo un error al enviar el mensaje!" : "There was an error sending the message!"}
+                    </Alert>
+                    )}
+                </div> -->
+            </form>
+        </section>
+        <script src="/src/js/app.js"></script>
+    </body>
+</html>
