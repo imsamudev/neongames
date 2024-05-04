@@ -1,5 +1,3 @@
-import "./style.css";
-
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const navbarLinks = document.getElementById("navbar-links");
 
