@@ -1,1 +1,0 @@
-// Acá se importan las imágenes de los juegos para entregarlas a los diferentes .html que las necesiten
