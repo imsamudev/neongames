@@ -1,10 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: radial-gradient(circle at center, #333, #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  font-family: "oswald", sans-serif;
+}
+:root {
+  --morado-oscuro: #8600d8;
+  --rosa-intenso: #f113a8;
+  --azul-electrico: #113bf4;
+  --azul-cielo: #00edff;
+}
 
 /* navegation */
+header {
+  width: 100%;
+}
 .navbar {
   background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
   color: #fff;
@@ -53,76 +72,200 @@
   margin: 3px 0;
 }
 
+/* intro-home section */
+.billboard-home {
+  gap: 20px;
+  height: 50%;
+  width: 90%;
+}
+.grid-container {
+  height: 100%;
+  width: 100%;
+}
+.billboard-home-img {
+  display: none;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 20px 0px;
+}
+
+.billboard-home-img.active {
+  display: block;
+}
+
+/* carousel-section */
+.carousel,
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-container {
+  height: 210px;
+  width: 100%;
+}
+
+.carousel {
+  width: 90%;
+  height: 260px;
+  justify-content: flex-start;
+  gap: 25px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.offer-card,
+.card {
+  position: relative;
+  height: 225px;
+  width: 168.75px;
+  color: white;
+  cursor: pointer;
+}
+.cover {
+  height: 75%;
+  width: 100%;
+  object-fit: cover;
+}
+.description {
+  position: absolute;
+  background: linear-gradient(to bottom, var(--azul-electrico), black);
+  height: 25%;
+  width: 100%;
+  bottom: 0;
+}
+.title-card {
+  width: 70%;
+  word-wrap: break-word;
+  text-align: left;
+  position: absolute;
+  font-size: 0.8rem;
+  left: 0;
+  top: 10%;
+  margin-left: 5px;
+}
+.price {
+  font-size: 0.9rem;
+  color: #00edff;
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  margin-right: 10px;
+}
+/* elementos de oferta */
+.discount-tag {
+  position: absolute;
+  background-color: #f113a8;
+  -webkit-text-stroke: black 0.5px;
+  font-size: 1.4rem;
+  bottom: 100%;
+  padding: 3px;
+  border-radius: 0px 10px 10px 0;
+}
+.discount-price {
+  text-decoration: line-through;
+  font-size: 0.7rem;
+  color: gray;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  margin-right: 10px;
+}
+/* ------------------- */
+
+/* bordes */
+.offer-card,
+.card {
+  border-radius: 20px 20px 20px 0;
+}
+.cover {
+  border-radius: 20px 20px 0px 0;
+}
+.description {
+  border-radius: 0 0 20px 0;
+}
+/* ------------- */
+#prevBtn,
+#nextBtn {
+  display: none;
+  font-size: 5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 /* Contact Form */
 
 .container-form {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-title {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .input-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .mensaje-exito,
 .mensaje-error {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .mensaje-exito {
-    color: #28a745;
+  color: #28a745;
 }
 
 .mensaje-error {
-    color: #dc3545;
+  color: #dc3545;
 }
 @media screen and (max-width: 768px) {
-/* navegation */
+  /* navegation */
   .container-navigation {
     min-height: 80px;
   }
@@ -140,3 +283,67 @@ textarea {
     display: flex;
   }
 }
+
+@media (min-width: 576px) {
+  .billboard-home {
+    height: 50%;
+    width: 65%;
+  }
+}
+
+@media (min-width: 769px) {
+  .billboard-home {
+    height: 30%;
+    width: 75%;
+  }
+
+  .billboard-home-img {
+    display: block;
+  }
+  .grid-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "area1 area1 area2 area2 area4 area4 area4"
+      "area1 area1 area3 area3 area4 area4 area4";
+  }
+  .img-1 {
+    grid-area: area1;
+  }
+  .img-2 {
+    grid-area: area2;
+  }
+  .img-3 {
+    grid-area: area3;
+  }
+  .img-4 {
+    grid-area: area4;
+  }
+  .carousel-container {
+    width: 80%;
+  }
+  .carousel {
+    width: 100%;
+  }
+  #prevBtn,
+  #nextBtn {
+    display: block;
+  }
+  .btn-carousel {
+    background-image: radial-gradient(circle, black, var(--morado-oscuro) 90%);
+    border-radius: 50%;
+    color: white;
+    font-size: 2.6rem;
+    margin: 25px;
+  }
+  .btn-carousel:hover {
+    transform: scale(1.2);
+    background-image: radial-gradient(circle, black, var(--azul-electrico) 90%);
+    transition: all 0.3s;
+  }
+}
+/* --------------- */
