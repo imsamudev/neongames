@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* navegation */
+.navbar {
+  background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
+  color: #fff;
+  padding: 15px 0;
+}
+
+.container-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.brand {
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  row-gap: 1rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: black;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+
+/* Contact Form */
+
+.container-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.mensaje-exito,
+.mensaje-error {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mensaje-exito {
+    color: #28a745;
+}
+
+.mensaje-error {
+    color: #dc3545;
+}
+@media screen and (max-width: 768px) {
+/* navegation */
+  .container-navigation {
+    min-height: 80px;
+  }
+  .navbar-links {
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
