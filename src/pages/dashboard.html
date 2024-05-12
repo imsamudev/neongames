@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neon Games - Panel de control</title>
-</head>
-<body>
-    <h1>Bienvenido al panel de control ${userName}</h1>
-    <div>
-        
-    </div>
-</body>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+          <div class="container-navigation">
+            <div class="brand">Icono</div>
+            <div class="">
+              <a href="/src/pages/cart.html" style="color: black">Carrito</a>
+            </div>
+            <div class="">Buscador</div>
+            <div class="hamburger-menu" id="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+          <div class="navbar-links" id="navbar-links">
+            <a href="/index.html">Inicio</a>
+            <a href="./products.html">Productos</a>
+            <a href="./about.html">Nosotros</a>
+            <a href="./contact.html">Contacto</a>
+            <a href="./dashboard.html">Dashboard</a>
+          </div>
+        </nav>
+      </header>
+    <main id="dashboard-page">
+      <h1>Bienvenido al panel de control ${userName}</h1>
+      <section id="dashboard-content">
+
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
