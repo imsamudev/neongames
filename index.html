@@ -3,11 +3,16 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NeonGames Videogames Store">
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- fuentes de google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- box icons link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <title>NeonGames | Videogames Store</title>
   <link rel="stylesheet" href="./src/styles/index.css">
 </head>
@@ -17,7 +22,9 @@
     <nav class="navbar">
       <div class="container-navigation">
         <div class="brand">Icono</div>
-        <div class="">Carrito</div>
+        <div class="">
+          <a href="/src/pages/cart.html" style="color: black;">Carrito</a>
+        </div>
         <div class="">Buscador</div>
         <div class="hamburger-menu" id="hamburger-menu">
           <div class="bar"></div>
@@ -34,6 +41,249 @@
       </div>
     </nav>
   </header>
+  <!-- IMPORTANTE: la estructura de datos de las siguientes cards para la entrega de proyecto frontend, en ésta instancio se usará algo estático desde aquí, en la segunda parte de backend se trabajará en estructura de datos. -samudev -->
+  <div class="billboard-home">
+    <div class="grid-container">
+      <img class="billboard-home-img img-1" src="./src/assets/games/covers-billboard/apex-legends.webp"
+        alt="apex-legends">
+      <img class="billboard-home-img img-2" src="./src/assets/games/covers-billboard/dota_2.webp" alt="dota_2">
+      <img class="billboard-home-img img-3" src="./src/assets/games/covers-billboard/ea-fc_2024.webp" alt="ea-fc_2024">
+      <img class="billboard-home-img img-4" src="./src/assets/games/covers-billboard/forza-horizon_5.webp"
+        alt="forza-horizon_5">
+    </div>
+  </div>
+
+  <div class="carousel-container">
+    <button id="prevBtn"><i class='bx bx-chevron-left btn-carousel'></i></button>
+    <div class="carousel" id="carousel">
+      <div class="border-card">
+        <div class="card">
+          <img src="./src/assets/games/cover-cards/age-of-empires_II_definitive-edition.webp"
+            alt="age-of-empires_II_definitive-edition" class="cover">
+          <div class="description">
+            <h2 class="title-card">Age of Empires II Definitive Edition</h2>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/age-of-mithology_extended-edition.webp"
+            alt="age-of-mithology_extended-edition" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Age of Mythology Extend Edition</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/apex-legends.webp" alt="apex-legends" class="cover">
+          <div class="description">
+            <h2 class="title-card">Apex Legends</h2>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/battlefield_2042.webp" alt="battlefield_2042" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Battlefield 2042</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/battlefield_V.webp" alt="battlefield_V" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Battlefield V</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/company-of-heroes.webp" alt="company-of-heroes" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Company of Heroes</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/counter-strike_2.webp" alt="counter-strike_2" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Counter Strike 2</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/dead-space_2.webp" alt="dead-space_2" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Dead Space 2</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/dota_2.webp" alt="dota_2" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Dota 2</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/warhammer_III_total-war.webp" alt="warhammer_III_total-war"
+            class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Warhammer III Total War</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="nextBtn"><i class='bx bx-chevron-right btn-carousel'></i></button>
+  </div>
+
+  <!-- segundo carrusel -->
+
+  <div class="carousel-container">
+    <button id="prevBtn"><i class='bx bx-chevron-left btn-carousel'></i></button>
+    <div class="carousel" id="carousel">
+      <div class="border-card">
+        <div class="card">
+          <img src="./src/assets/games/cover-cards/call-of-duty_black-ops-II.webp" alt="call-of-duty_black-ops-II"
+            class="cover">
+          <div class="description">
+            <h2 class="title-card">Call of Duty Black OPS II</h2>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/company-of-heroes_2.webp" alt="company-of-heroes_2" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Company of Heroes II</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/company-of-heroes_3.webp" alt="company-of-heroes_3" class="cover">
+          <div class="description">
+            <h2 class="title-card">Company of Heroes 3</h2>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/dead-space_remake.webp" alt="dead-space_remake" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Dead Space Remake</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/ea-sports_wrc.webp" alt="ea-sports_wrc" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">EA Sports WRC</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/sons-of-the-forest.webp" alt="sons-of-the-forest" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Sons of the forest</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/valheim.webp" alt="valheim" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Valheim</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/nfs_heat.webp" alt="nfs_heat" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Need for Speed Heat Deluxe Edition</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/nba_2k24.webp" alt="nba_2k24" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">NBA 2K24</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-card">
+        <div class="offer-card">
+          <img src="./src/assets/games/cover-cards/dead-space_3.webp" alt="dead-space_3" class="cover">
+          <div class="description">
+            <h1 class="discount-tag">-40%</h1>
+            <h2 class="title-card">Dead Space 3</h2>
+            <h3 class="discount-price">$1.87</h3>
+            <h3 class="price">$1.22</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="nextBtn"><i class='bx bx-chevron-right btn-carousel'></i></button>
+  </div>
   <script src="./main.js"></script>
 </body>
 
