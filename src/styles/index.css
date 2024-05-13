@@ -210,8 +210,8 @@ header {
   border-radius: 0 0 20px 0;
 }
 /* ------------- */
-#prevBtn,
-#nextBtn {
+.prevBtn,
+.nextBtn {
   display: none;
   font-size: 5rem;
   background: none;
@@ -351,8 +351,8 @@ textarea {
   .carousel {
     width: 100%;
   }
-  #prevBtn,
-  #nextBtn {
+  .prevBtn,
+  .nextBtn {
     display: block;
   }
   .btn-carousel {
