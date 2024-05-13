@@ -87,7 +87,29 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px 20px 20px 0px;
+  border: 3px solid;
+  border-image-source: linear-gradient(
+    180deg,
+    var(--morado-oscuro),
+    var(--rosa-intenso),
+    var(--azul-electrico),
+    var(--azul-cielo)
+  );
+  border-image-slice: 1;
+  transition: border 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.billboard-home-img:hover {
+  border-image-source: linear-gradient(
+    90deg,
+    var(--azul-cielo),
+    var(--morado-oscuro),
+    var(--rosa-intenso),
+    var(--azul-electrico)
+  );
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
 }
 
 .billboard-home-img.active {
