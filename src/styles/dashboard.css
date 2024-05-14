@@ -1,28 +1,26 @@
+body {
+  background: radial-gradient(circle at center, #333, #000);
+  font-family: "oswald", sans-serif;
+}
+
 :root {
   --morado-oscuro: #8600d8;
   --rosa-intenso: #f113a8;
   --azul-electrico: #113bf4;
   --azul-cielo: #00edff;
 }
-html {
-  font-family: "oswald", sans serif;
-}
 
-* {
-  margin: 0 auto;
+/* navegation */
+header {
+  width: 100%;
 }
-
-body {
-  background: radial-gradient(circle at center, #333, #100e0e);
-}
-
 .navbar {
   background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
   color: #fff;
   padding: 15px 0;
 }
 
-.container {
+.container-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +35,7 @@ body {
 
 .navbar-links {
   display: flex;
+  row-gap: 1rem;
 }
 
 .navbar-links a {
@@ -62,21 +61,19 @@ body {
   background-color: #fff;
   margin: 3px 0;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    min-height: 80px;
-  }
-  .navbar-links {
-    display: none;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  .navbar-links.active {
-    display: flex;
-    flex-direction: column;
-  }
-  .hamburger-menu {
-    display: flex;
-  }
+
+p,
+label,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: whitesmoke;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--azul-electrico);
 }

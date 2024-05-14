@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Games - Carro de compras</title>
+    <link rel="stylesheet" href="/src/styles/cart.css" />
+    <!-- <link rel="stylesheet" href="/src/styles/index.css"> -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container-navigation">
+          <div class="brand">Icono</div>
+          <div class="">
+            <a href="/src/pages/cart.html" style="color: black">Carrito</a>
+          </div>
+          <div class="">Buscador</div>
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="navbar-links" id="navbar-links">
+          <a href="/index.html">Inicio</a>
+          <a href="./products.html">Productos</a>
+          <a href="./about.html">Nosotros</a>
+          <a href="./contact.html">Contacto</a>
+          <a href="./dashboard.html">Dashboard</a>
+        </div>
+      </nav>
+    </header>
+    <main id="cart-page">
+      <h1>Productos seleccionados</h1>
+      <section id="cart-content">
+        <div id="cart-section">
+          <div id="cart-list">
+            <div id="card-title">
+              <h2>Lista de productos</h2>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-description">
+                <img
+                  src="../assets/games/cover-cards/age-of-mithology_extended-edition.webp"
+                  alt="age-of-mithology_extended-edition"
+                />
+                <div class="item-details">
+                  <h3>Age of Mythology</h3>
+                  <ul>
+                    <li>Genero: Estrategia</li>
+                    <li>Otros títulos: Age of Empires II</li>
+                    <li>Calificación: 5/5</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item-details_commercial">
+                <label for="input-price">Precio:</label>
+                <input
+                  type="text"
+                  id="input-price"
+                  placeholder="$12345"
+                  disabled
+                />
+                <label for="input-amount">Cantidad:</label>
+                <input type="text" id="input-amount" placeholder="1" disabled />
+                <div class="item-buttons">
+                  <button class="delete-button">Eliminar</button>
+                  <button class="decrement-button">Quitar</button>
+                  <button class="increment-button">Agregar</button>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="cart-item">
+              <div class="item-description">
+                <img
+                  src="../assets/games/cover-cards/battlefield_2042.webp"
+                  alt="battlefield_2042"
+                />
+                <div class="item-details">
+                  <h3>Battlefield 2042</h3>
+                  <ul>
+                    <li>Genero: FPS</li>
+                    <li>Otros títulos: Battlefield V</li>
+                    <li>Calificación: 5/5</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item-details_commercial">
+                <label for="input-price">Precio:</label>
+                <input
+                  type="text"
+                  id="input-price"
+                  placeholder="$12345"
+                  disabled
+                />
+                <label for="input-amount">Cantidad:</label>
+                <input type="text" id="input-amount" placeholder="1" disabled />
+                <div class="item-buttons">
+                  <button class="delete-button">Eliminar</button>
+                  <button class="decrement-button">Quitar</button>
+                  <button class="increment-button">Agregar</button>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="cart-item">
+              <div class="item-description">
+                <img
+                  src="../assets/games/cover-cards/the-forest.webp"
+                  alt="the-forest"
+                />
+                <div class="item-details">
+                  <h3>The forest</h3>
+                  <ul>
+                    <li>Genero: Survival</li>
+                    <li>Otros títulos: Sons of the forest</li>
+                    <li>Calificación: 5/5</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item-details_commercial">
+                <label for="input-price">Precio:</label>
+                <input
+                  type="text"
+                  id="input-price"
+                  placeholder="$12345"
+                  disabled
+                />
+                <label for="input-amount">Cantidad:</label>
+                <input type="text" id="input-amount" placeholder="1" disabled />
+                <div class="item-buttons">
+                  <button class="delete-button">Eliminar</button>
+                  <button class="decrement-button">Quitar</button>
+                  <button class="increment-button">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div id="cart-resume">
+            <div>
+              <h2>Resumen de productos</h2>
+            </div>
+            <ul id="items-list">
+              <li class="list-item">
+                <span>Age of Mythology</span>
+                <span>$12345</span>
+              </li>
+              <hr />
+              <li class="list-item">
+                <span>Battlefield 2042</span>
+                <span>$12345</span>
+              </li>
+              <hr />
+              <li class="list-item">
+                <span>The forest</span>
+                <span>$12345</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
