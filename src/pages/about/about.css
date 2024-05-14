@@ -1,0 +1,158 @@
+:root {
+  --morado-oscuro: #8600d8;
+  --rosa-intenso: #f113a8;
+  --azul-electrico: #113bf4;
+  --azul-cielo: #00edff;
+}
+html {
+  font-family: "oswald", sans serif;
+}
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  background: radial-gradient(circle at center, #333, #100e0e);
+}
+
+.navbar {
+  background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
+  color: #fff;
+  padding: 15px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.brand {
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: black;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.image-container {
+  width: 100vw; /* specify the desired width */
+  height: 432px; /* specify the desired height */
+  overflow: hidden; /* hide any overflow */
+  position: relative; /* position the container relative to its normal position */
+}
+.game-image {
+  position: absolute; /* position the image absolute to its container */
+  top: 0; /* align the image to the top of the container */
+  left: 0; /* align the image to the left of the container */
+  width: 100%; /* set the image width to 100% of the container */
+  height: 100%; /* set the image height to 100% of the container */
+  object-fit: cover; /* cover the container with the image, cropping it if necessary */
+  opacity: 0.45;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+  .hero-content {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.gradient-circle1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at 50% 50%, 
+    white 0%,
+    #113bf4 60%,
+    #00edff 70%
+  );
+  margin: 36px 200px;
+}
+
+
+.icon-container1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.icon-container1 svg {
+  width: 30px; /* ajusta el tamaño del icono */
+  height: 30px; /* ajusta el tamaño del icono */
+}
+
+.gradient-circle2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at 50% 50%, 
+    white 0%,
+    #8600d8 60%,
+    #f113a8 70%
+  );
+  margin: 36px 200px;
+}
+
+
+
+  @media screen and (max-width: 768px) {
+    .container {
+      min-height: 80px;
+    }
+    .navbar-links {
+      display: none;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+    }
+    .hamburger-menu {
+      display: flex;
+    }
+  }
