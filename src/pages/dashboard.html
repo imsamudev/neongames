@@ -4,37 +4,168 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neon Games - Panel de control</title>
-    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
   </head>
   <body>
     <header>
-        <nav class="navbar">
-          <div class="container-navigation">
-            <div class="brand">Icono</div>
-            <div class="">
-              <a href="/src/pages/cart.html" style="color: black">Carrito</a>
-            </div>
-            <div class="">Buscador</div>
-            <div class="hamburger-menu" id="hamburger-menu">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
+      <nav class="navbar">
+        <div class="container-navigation">
+          <div class="brand">Icono</div>
+          <div class="">
+            <a href="/src/pages/cart.html" style="color: black">Carrito</a>
           </div>
-          <div class="navbar-links" id="navbar-links">
-            <a href="/index.html">Inicio</a>
-            <a href="./products.html">Productos</a>
-            <a href="./about.html">Nosotros</a>
-            <a href="./contact.html">Contacto</a>
-            <a href="./dashboard.html">Dashboard</a>
+          <div class="">Buscador</div>
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
           </div>
-        </nav>
-      </header>
+        </div>
+        <div class="navbar-links" id="navbar-links">
+          <a href="/index.html">Inicio</a>
+          <a href="./products.html">Productos</a>
+          <a href="./about.html">Nosotros</a>
+          <a href="./contact.html">Contacto</a>
+          <a href="./dashboard.html">Dashboard</a>
+        </div>
+      </nav>
+    </header>
     <main id="dashboard-page">
-      <h1>Bienvenido al panel de control ${userName}</h1>
+      <h1>¡Bienvenido/a al panel de control administrativo!</h1>
       <section id="dashboard-content">
-
+        <article id="dashboard-management">
+          <div class="board-title">
+            <h1>Lista de productos</h1>
+          </div>
+          <div id="products-list">
+            <div class="product-list-item">
+              <img
+                src="/src/assets/games/coversSmall/sons-of-the-forest.webp"
+                alt="sons-of-the-forest"
+              />
+              <div class="product-card-details">
+                <h4>Sons of the Forest</h4>
+                <div>
+                  <button>Ver detalles</button>
+                  <button>Editar</button>
+                  <button>Eliminar</button>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="product-list-item">
+              <img
+                src="/src/assets/games/coversSmall/valheim.webp"
+                alt="valheim"
+              />
+              <div class="product-card-details">
+                <h4>Valheim</h4>
+                <div>
+                  <button>Ver detalles</button>
+                  <button>Editar</button>
+                  <button>Eliminar</button>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="product-list-item">
+              <img
+                src="/src/assets/games/coversSmall/call-of-duty_black-ops-II.webp"
+                alt="call-of-duty_black-ops-II"
+              />
+              <div class="product-card-details">
+                <h4>Call of Duty Black Ops II</h4>
+                <div>
+                  <button>Ver detalles</button>
+                  <button>Editar</button>
+                  <button>Eliminar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="dashboard-resume">
+          <div class="board-title">
+            <h1>Detalles de producto</h1>
+          </div>
+          <div id="product-details">
+            <div class="product-detail">
+              <h3>
+                Sons of the forest
+              </h3>
+              <ul>
+                <li>
+                  <span>Precio</span>
+                  <span>$12345</span>
+                </li>
+                <li>
+                  <span>Género</span>
+                  <span>Estrategia</span>
+                </li>
+                <li>
+                  <span>Calificación</span>
+                  <span>5/5</span>
+                </li>
+                <li>
+                  <span>Imagen</span>
+                  <span>"sons-of-the-forest.webp"</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
       </section>
+      <h2>Ingresá un título que quieras crear, buscar, editar o eliminar</h2>
+      <form id="dashboard-form">
+        <label for="input-name">Titulo:</label>
+        <input
+          type="text"
+          id="input-name"
+          name="name"
+          minlength="0"
+          maxlength="32"
+          placeholder="Nombre del juego..."
+          required
+        />
+
+        <label for="input-price">Precio:</label>
+        <input
+          type="text"
+          id="input-price"
+          name="price"
+          minlength="0"
+          maxlength="100000"
+          placeholder="$300"
+          required
+        />
+
+        <label for="input-category">Categoria:</label>
+        <input
+          type="text"
+          id="input-category"
+          name="category"
+          minlength="0"
+          maxlength="16"
+          placeholder="Fps, Rpg, Estrategia..."
+          required
+        />
+
+        <label for="input-image">Imagen:</label>
+        <input
+          type="text"
+          id="input-image"
+          name="image"
+          minlength="0"
+          maxlength="100"
+          placeholder="Ubicación de la imagen..."
+          required
+        />
+        <div>
+          <button type="submit" id="submit-button">Aplicar</button>
+          <button id="clean-button">Limpiar</button>
+        </div>
+      </form>
     </main>
     <footer></footer>
   </body>
