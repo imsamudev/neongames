@@ -1,10 +1,3 @@
-const hamburgerMenu = document.getElementById("hamburger-menu");
-const navbarLinks = document.getElementById("navbar-links");
-
-hamburgerMenu.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
-});
-
 // billboard section
 let index = 0;
 const images = document.querySelectorAll(".billboard-home-img");
