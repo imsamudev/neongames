@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neon Games - Carro de compras</title>
     <link rel="stylesheet" href="/src/styles/cart.css" />
-    <link rel="stylesheet" href="../styles/globals.css">
-    <!-- <link rel="stylesheet" href="/src/styles/index.css"> -->
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <!-- fuentes de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- box icons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -34,8 +42,8 @@
     </header>
     <main id="cart-page">
       <h1>Productos seleccionados</h1>
-      <section id="cart-content">
-        <article id="cart-section">
+      <section id="cart-section">
+        <article id="cart-article">
           <div id="cart-list">
             <div id="card-title">
               <h2>Lista de productos</h2>
@@ -67,9 +75,15 @@
                 <label for="input-amount">Cantidad:</label>
                 <input type="text" id="input-amount" placeholder="1" disabled />
                 <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
+                  <button class="delete-button">
+                    <i class="bx bx-trash"></i>
+                  </button>
+                  <button class="decrement-button">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <button class="increment-button">
+                    <i class="bx bx-plus"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -102,9 +116,15 @@
                 <label for="input-amount">Cantidad:</label>
                 <input type="text" id="input-amount" placeholder="1" disabled />
                 <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
+                  <button class="delete-button">
+                    <i class="bx bx-trash"></i>
+                  </button>
+                  <button class="decrement-button">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <button class="increment-button">
+                    <i class="bx bx-plus"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -137,9 +157,15 @@
                 <label for="input-amount">Cantidad:</label>
                 <input type="text" id="input-amount" placeholder="1" disabled />
                 <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
+                  <button class="delete-button">
+                    <i class="bx bx-trash"></i>
+                  </button>
+                  <button class="decrement-button">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <button class="increment-button">
+                    <i class="bx bx-plus"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -155,12 +181,10 @@
                 <span>Age of Mythology</span>
                 <span>$12345</span>
               </li>
-              <hr />
               <li class="list-item">
                 <span>Battlefield 2042</span>
                 <span>$12345</span>
               </li>
-              <hr />
               <li class="list-item">
                 <span>The forest</span>
                 <span>$12345</span>
@@ -171,6 +195,10 @@
                 <li>Precio total:</li>
                 <li>$12345</li>
               </ul>
+            </div>
+            <div>
+              <button>Confirmar compra</button>
+              <button>Limpiar carro</button>
             </div>
           </div>
         </article>
