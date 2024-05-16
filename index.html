@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="NeonGames Videogames Store">
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <!-- fuentes de google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <!-- box icons link -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <title>NeonGames | Videogames Store</title>
+  <link rel="stylesheet" href="./src/styles/globals.css">
   <link rel="stylesheet" href="./src/styles/index.css">
 </head>
+<!-- IMPORTANTE: Como proyecto frontend, algunas funciones estarán limitadas. Estará completo en su versión final. -samudev -->
 
 <body>
   <header>
@@ -284,6 +282,43 @@
     </div>
     <button class="nextBtn"><i class='bx bx-chevron-right btn-carousel'></i></button>
   </div>
+
+  <!-- footer section -->
+  <footer>
+    <div class="container-footer">
+      <div class="brand">
+        <img src="" alt="logo">
+        <h3>Neon Games</h3>
+      </div>
+      <div class="container-sections">
+        <div class="content">
+          <div class="social-footer">
+            <a href="#">
+              <i class='bx bxl-twitter links-social-footer'></i>
+            </a>
+            <a href="#"><i class='bx bxl-facebook links-social-footer'></i></a>
+            <a href="#"><i class='bx bxl-linkedin links-social-footer'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt links-social-footer'></i></a>
+          </div>
+          <p class="direction-footer">Av. Innovación 1234, Piso 5
+            Barrio Tecnológico
+            Ciudad Futuro, CP 56789
+            República Digital
+          </p>
+        </div>
+        <div class="contact-footer">
+          <a class="website" href="">neongames.com.ar</a>
+          <p>©️2023-2024</p>
+          <p>📱 12312408714</p>
+        </div>
+      </div>
+      <div class="container-links-footer">
+        <a class="links-footer" href="./src/pages/about.html">Quienes somos</a>
+        <a class="links-footer" href="#">Comunidad</a>
+        <a class="links-footer" href="#">Soporte</a>
+      </div>
+    </div>
+  </footer>
   <script src="./src/scripts/navbar.js"></script>
   <script src="./main.js"></script>
 </body>
