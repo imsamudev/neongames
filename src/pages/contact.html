@@ -10,60 +10,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NeonGames | Videogames Store</title>
   <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/contact.css">
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <div class="container-navigation">
-        <div class="brand">Icono</div>
-        <div class="">Carrito</div>
-        <div class="">Buscador</div>
-        <div class="hamburger-menu" id="hamburger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <div class="container-navigation">
+            <div class="brand">Icono</div>
+            <div class="cart">Carrito</div>
+            <div class="search">Buscador</div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-      </div>
-      <div class="navbar-links" id="navbar-links">
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="/src/pages/contact.html">Contacto</a>
-      </div>
+        <div class="navbar-links" id="navbar-links">
+            <a href="/index.html">Inicio</a>
+            <a href="/src/pages/products.html">Productos</a>
+            <a href="/src/pages/about.html">Quienes Somos</a>
+            <a href="./contact.html">Contacto</a>
+        </div>
     </nav>
-  </header>
-
+</header>
   <main>
-    <div class="container-form">
-        <h1 class="form-title">Formulario  de Contacto</h1>
-        <form action="" id="contactForm">
-
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" class="form-control" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" class="form-control" required>
-            </div>
-
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <input type="mensaje" id="mensaje" rows="4" class="form-control" required>
-            </div>
-
-            <button type="submit" class="btn">Enviar</button>
-
-             <p id="mensajeExito" class="mensaje-exito"></p>
-        <p id="mensajeError" class="mensaje-error"></p>
-        </form>
-    </div>
+  
+    <section class="contact">
+      <h2>¡Contáctanos!</h2>
+      <form>
+          <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="text" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject">
+          </div>
+          <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit">Enviar mensaje</button>
+      </form>
+  </section>
   </main>
 
-  <script src="../../main.js"></script>
+  <script src="/src/scripts/navbar.js"></script>
+
 </body>
 
 </html>
