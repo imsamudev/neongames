@@ -16,7 +16,7 @@ function nextImage() {
   index = (index + 1) % images.length;
   showImage();
 }
-setInterval(nextImage, 5000);
+setInterval(nextImage, 4000);
 // CAROUSEL SECTION
 const carousels = document.querySelectorAll(".carousel-container");
 carousels.forEach((carouselContainer) => {
