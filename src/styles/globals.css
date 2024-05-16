@@ -73,3 +73,31 @@ body {
   h5 {
     color: whitesmoke;
   }
+
+  /* Desktop Styles */
+@media(min-width: 768px) {
+  .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .hamburger-menu {
+      display: none;
+  }
+
+  .navbar-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: auto;
+  }
+
+  .navbar-links a {
+      padding: 0 15px;
+  }
+
+  .feature {
+      width: 30%;
+      margin: 15px;
+  }
+}
