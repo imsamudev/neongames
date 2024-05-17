@@ -19,6 +19,28 @@ body {
   --blanco: #f5f5f5;
 }
 
+/* button return to nav */
+.returnBtn {
+  font-size: 3rem;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 5%;
+  background: none;
+  border: none;
+  color: white;
+  background-image: radial-gradient(circle, black, var(--morado-oscuro) 80%);
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+.returnBtn:hover {
+  transform: scale(1.2);
+  background-image: radial-gradient(circle, black, var(--azul-electrico) 90%);
+  transition: all 0.5s;
+}
+
 /* navegation */
 header {
   width: 100%;
@@ -147,6 +169,14 @@ footer {
   text-decoration: none;
 }
 @media (min-width: 768px) {
+  .returnBtn {
+    bottom: 1%;
+    right: 1%;
+    font-size: 4rem;
+    height: 65px;
+    width: 65px;
+  }
+
   footer {
     font-size: 1rem;
   }
