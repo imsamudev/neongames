@@ -43,6 +43,7 @@ hr {
   #card-title {
     width: 100%;
     border-bottom: 1px solid var(--blanco);
+    margin: 1rem 0;
   }
   .cart-item {
     margin: 1rem;
@@ -77,6 +78,14 @@ hr {
     border-left: 1px solid var(--blanco);
   }
   
+  .item-details_commercial div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  
   .item-details_commercial div:first-of-type div{
     display: flex;
     flex-direction: row;
@@ -106,8 +115,7 @@ hr {
   }
   
   .item-details ul li{
-    margin: .5rem;
-  
+    margin: 1rem;
   }
   
   .item-buttons {
@@ -115,8 +123,7 @@ hr {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap: 0.5rem;
-    padding-bottom: 1rem;
+    gap: 1rem;
   }
   
   .delete-button {
@@ -199,6 +206,7 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1rem;
     justify-content: space-evenly;
   }
 
@@ -287,6 +295,7 @@ hr {
 
   #card-title {
     width: 100%;
+    margin: 1rem 0;
     border-bottom: 1px solid var(--blanco);
   }
 
@@ -308,6 +317,10 @@ hr {
     align-items: stretch;
     justify-content: flex-start;
   }
+
+  .item-details{
+    padding: 1rem 0;
+  }
   
   .item-details h3 {
     color: var(--blanco);
@@ -324,11 +337,20 @@ hr {
   }
 
   .item-details_commercial{
+    padding: 1rem 0;
     border-top: 1px solid var(--blanco);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .item-details_commercial div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 1rem;
   }
 
   .item-details_commercial div:first-of-type div{
