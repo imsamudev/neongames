@@ -75,6 +75,7 @@ header {
 }
 .brand-footer {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -125,6 +126,47 @@ header {
   margin: 3px 0;
 }
 
+#cart-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: var(--blanco);
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: var(--blanco);
+  box-shadow: 0 0 0 transparent;
+  transition: color 0.5s;
+}
+
+#cart-btn:hover {
+  cursor: pointer;
+  color: var(--negro);
+}
+
+#search-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: var(--blanco);
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 transparent;
+  background-color: transparent;
+  transition: color 0.5s;
+}
+
+#search-btn:hover {
+  cursor: pointer;
+  color: var(--negro);
+}
+
 /* footer section */
 footer {
   width: 100%;
@@ -150,6 +192,12 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+.brand img{
+  width: 64px;
+  height: 64px;
+}
+
 .container-sections {
   display: flex;
   justify-content: center;

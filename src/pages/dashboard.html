@@ -15,210 +15,244 @@
     <header>
       <nav class="navbar">
         <div class="container-navigation">
-          <div id="brand">
-            <img src="../assets/logos/ng-1.svg" alt="neon-games">
+          <div class="brand">
+            <img src="/src/assets/logos/ng-1.svg" alt="" />
           </div>
-          <div>
-            <a id="cart-btn" href="../pages/cart.html"><i class="bx bx-cart-alt"></i></a>
+          <div class="navbar-links" id="navbar-links">
+            <a href="../../index.html">Inicio</a>
+            <a href="./products.html">Productos</a>
+            <a href="./about.html">Nosotros</a>
+            <a href="./contact.html">Contacto</a>
+            <a href="./dashboard.html">Dashboard</a>
           </div>
-          <div id="search-btn"><i class="bx bx-search"></i></div>
+          <div class="search-cart">
+            <div>
+              <a id="cart-btn" href="./cart.html"
+                ><i class="bx bx-cart-alt search-cart-btn"></i
+              ></a>
+            </div>
+            <div id="search-btn">
+              <i class="bx bx-search search-cart-btn"></i>
+            </div>
+          </div>
           <div class="hamburger-menu" id="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
         </div>
-        <div class="navbar-links" id="navbar-links">
-          <a href="../../index.html">Inicio</a>
-          <a href="./products.html">Productos</a>
-          <a href="./about.html">Nosotros</a>
-          <a href="./contact.html">Contacto</a>
-          <a href="./dashboard.html">Dashboard</a>
-        </div>
       </nav>
     </header>
     <main id="dashboard-page">
       <h1>¡Bienvenido/a al panel de control administrativo!</h1>
-      <section id="dashboard-content">
-        <article id="dashboard-management">
-          <div class="board-title">
-            <h1>Lista de productos</h1>
-          </div>
-          <div id="products-list">
-            <div class="product-list-item">
-              <img
-                src="../assets/games/coversSmall/sons-of-the-forest.webp"
-                alt="sons-of-the-forest"
-              />
-              <div class="product-card-details">
-                <h4>Sons of the Forest</h4>
-                <div>
-                  <button class="search-button"><i class="bx bx-search"></i></button>
-                  <button class="edit-button"><i class="bx bx-edit"></i></button>
-                  <button class="delete-button"><i class="bx bx-trash"></i></button>
+      <section>
+        <h2>Productos existentes</h2>
+        <article id="dashboard-content">
+          <div id="dashboard-management">
+            <div class="board-title">
+              <h3>Productos:</h3>
+            </div>
+            <div id="products-list">
+              <div class="product-list-item">
+                <img
+                  src="../assets/games/coversSmall/sons-of-the-forest.webp"
+                  alt="sons-of-the-forest"
+                />
+                <div class="product-card-details">
+                  <h4>Sons of the Forest</h4>
+                  <div>
+                    <button class="search-button">
+                      <i class="bx bx-search"></i>
+                    </button>
+                    <button class="edit-button">
+                      <i class="bx bx-edit"></i>
+                    </button>
+                    <button class="delete-button">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="product-list-item">
+                <img
+                  src="../assets/games/coversSmall/valheim.webp"
+                  alt="valheim"
+                />
+                <div class="product-card-details">
+                  <h4>Valheim</h4>
+                  <div>
+                    <button class="search-button">
+                      <i class="bx bx-search"></i>
+                    </button>
+                    <button class="edit-button">
+                      <i class="bx bx-edit"></i>
+                    </button>
+                    <button class="delete-button">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="product-list-item">
+                <img
+                  src="../assets/games/coversSmall/call-of-duty_black-ops-II.webp"
+                  alt="call-of-duty_black-ops-II"
+                />
+                <div class="product-card-details">
+                  <h4>Call of Duty Black Ops II</h4>
+                  <div>
+                    <button class="search-button">
+                      <i class="bx bx-search"></i>
+                    </button>
+                    <button class="edit-button">
+                      <i class="bx bx-edit"></i>
+                    </button>
+                    <button class="delete-button">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-            <hr />
-            <div class="product-list-item">
-              <img
-                src="../assets/games/coversSmall/valheim.webp"
-                alt="valheim"
-              />
-              <div class="product-card-details">
-                <h4>Valheim</h4>
-                <div>
-                  <button class="search-button"><i class="bx bx-search"></i></button>
-                  <button class="edit-button"><i class="bx bx-edit"></i></button>
-                  <button class="delete-button"><i class="bx bx-trash"></i></button>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div class="product-list-item">
-              <img
-                src="../assets/games/coversSmall/call-of-duty_black-ops-II.webp"
-                alt="call-of-duty_black-ops-II"
-              />
-              <div class="product-card-details">
-                <h4>Call of Duty Black Ops II</h4>
-                <div>
-                  <button class="search-button"><i class="bx bx-search"></i></button>
-                  <button class="edit-button"><i class="bx bx-edit"></i></button>
-                  <button class="delete-button"><i class="bx bx-trash"></i></button>
-                </div>
-              </div>
-            </div>
           </div>
-        </article>
-        <article id="dashboard-resume">
-          <div class="board-title">
-            <h1>Detalles de producto</h1>
-          </div>
-          <div id="product-details">
-            <div class="product-detail">
-              <h3>
-                Sons of the forest
-              </h3>
-              <ul>
-                <li>
-                  <span>Precio</span>
-                  <span>$12345</span>
-                </li>
-                <li>
-                  <span>Género</span>
-                  <span>Estrategia</span>
-                </li>
-                <li>
-                  <span>Calificación</span>
-                  <span>5/5</span>
-                </li>
-                <li>
-                  <span>Imagen</span>
-                  <span>"sons-of-the-forest.webp"</span>
-                </li>
-              </ul>
+          <div id="dashboard-resume">
+            <div class="board-title">
+              <h2>Detalles de producto</h2>
+            </div>
+            <div id="product-details">
+              <div class="product-detail">
+                <h4>Sons of the forest</h4>
+                <ul>
+                  <li>
+                    <span>Precio</span>
+                    <span>$12345</span>
+                  </li>
+                  <li>
+                    <span>Género</span>
+                    <span>Estrategia</span>
+                  </li>
+                  <li>
+                    <span>Calificación</span>
+                    <span>5/5</span>
+                  </li>
+                  <li>
+                    <span>Imagen</span>
+                    <span>"sons-of-the-forest.webp"</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </article>
       </section>
-      <h2>Ingresá un título que quieras crear, buscar, editar o eliminar</h2>
-      <form id="dashboard-form">
-        <label for="input-name">Titulo:</label>
-        <input
-          type="text"
-          id="input-name"
-          name="name"
-          minlength="0"
-          maxlength="32"
-          placeholder="Nombre del juego..."
-          required
-        />
+      <section>
+        <h2>Ingresá un título que quieras crear, buscar, editar o eliminar</h2>
+        <form id="dashboard-form">
+          <label for="input-name">Titulo:</label>
+          <input
+            type="text"
+            id="input-name"
+            name="name"
+            minlength="0"
+            maxlength="32"
+            placeholder="Nombre del juego..."
+            required
+          />
 
-        <label for="input-price">Precio:</label>
-        <input
-          type="text"
-          id="input-price"
-          name="price"
-          minlength="0"
-          maxlength="100000"
-          placeholder="$300"
-          required
-        />
+          <label for="input-price">Precio:</label>
+          <input
+            type="text"
+            id="input-price"
+            name="price"
+            minlength="0"
+            maxlength="100000"
+            placeholder="$300"
+            required
+          />
 
-        <label for="input-category">Categoria:</label>
-        <input
-          type="text"
-          id="input-category"
-          name="category"
-          minlength="0"
-          maxlength="16"
-          placeholder="Fps, Rpg, Estrategia..."
-          required
-        />
+          <label for="input-category">Categoria:</label>
+          <input
+            type="text"
+            id="input-category"
+            name="category"
+            minlength="0"
+            maxlength="16"
+            placeholder="Fps, Rpg, Estrategia..."
+            required
+          />
 
-        <label for="input-image">Calificación:</label>
-        <input
-          type="text"
-          id="input-rating"
-          name="rating"
-          minlength="0"
-          maxlength="10"
-          placeholder="Puntuación del 0 al 5..."
-          required
-        />
+          <label for="input-image">Calificación:</label>
+          <input
+            type="text"
+            id="input-rating"
+            name="rating"
+            minlength="0"
+            maxlength="10"
+            placeholder="Puntuación del 0 al 5..."
+            required
+          />
 
-        <label for="input-image">Imagen:</label>
-        <input
-          type="text"
-          id="input-image"
-          name="image"
-          minlength="0"
-          maxlength="100"
-          placeholder="Ubicación de la imagen..."
-          required
-        />
-        <div>
-          <button type="submit" id="submit-button">Aplicar</button>
-          <button id="clean-button">Limpiar</button>
-        </div>
-      </form>
+          <label for="input-image">Imagen:</label>
+          <input
+            type="text"
+            id="input-image"
+            name="image"
+            minlength="0"
+            maxlength="100"
+            placeholder="Ubicación de la imagen..."
+            required
+          />
+          <div>
+            <button type="submit" id="submit-button">Aplicar</button>
+            <button id="clean-button">Limpiar</button>
+          </div>
+        </form>
+      </section>
     </main>
     <!-- footer section -->
-  <footer>
-    <div class="container-footer">
-      <div class="brand">
-        <img src="../assets/logos/ng-1.svg" alt="logo">
-        <h3>Neon Games</h3>
-      </div>
-      <div class="container-sections">
-        <div class="content">
-          <div class="social-footer">
-            <a href="#">
-              <i class='bx bxl-twitter links-social-footer'></i>
-            </a>
-            <a href="#"><i class='bx bxl-facebook links-social-footer'></i></a>
-            <a href="#"><i class='bx bxl-linkedin links-social-footer'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt links-social-footer'></i></a>
+    <footer>
+      <div class="container-footer">
+        <div class="brand-footer">
+          <div class="brand">
+            <img src="../assets/logos/ng-1.svg" alt="logo" />
           </div>
-          <p class="direction-footer">Av. Innovación 1234, Piso 5
-            Barrio Tecnológico
-            Ciudad Futuro, CP 56789
-            República Digital
-          </p>
+          <h3>Neon Games</h3>
         </div>
-        <div class="contact-footer">
-          <a class="website" href="">neongames.com.ar</a>
-          <p>©️2023-2024</p>
-          <p>📱 12312408714</p>
+        <div class="container-sections">
+          <div class="content">
+            <div class="social-footer">
+              <a href="https://x.com/" target="_blank">
+                <i class="bx bxl-twitter links-social-footer"></i>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="bx bxl-facebook links-social-footer"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="bx bxl-linkedin links-social-footer"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="bx bxl-instagram-alt links-social-footer"></i
+              ></a>
+            </div>
+            <p class="direction-footer">
+              Av. Innovación 1234, Piso 5 Barrio Tecnológico Ciudad Futuro, CP
+              56789 República Digital
+            </p>
+          </div>
+          <div class="contact-footer">
+            <a class="website" href="">neongames.com.ar</a>
+            <p>©️2023-2024</p>
+            <p>📱 12312408714</p>
+          </div>
+        </div>
+        <div class="container-links-footer">
+          <a class="links-footer" href="./about.html">Quienes somos</a>
+          <a class="links-footer" href="./contact.html">Comunidad</a>
+          <a class="links-footer" href="./contact.html">Soporte</a>
         </div>
       </div>
-      <div class="container-links-footer">
-        <a class="links-footer" href="./src/pages/about.html">Quienes somos</a>
-        <a class="links-footer" href="#">Comunidad</a>
-        <a class="links-footer" href="#">Soporte</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>
