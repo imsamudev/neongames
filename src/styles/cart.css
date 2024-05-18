@@ -3,8 +3,17 @@ hr {
   border: 1px solid var(--azul-electrico);
 }
 
+h1,h2,h3,h4,h5,h6, a, p, li, label{
+  color: var(--blanco);
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 1rem 0;
+}
+
 /* Cart styles */
 @media screen and (min-width: 1024px){
+
   #cart-page {
     display: flex;
     flex-direction: column;
@@ -222,6 +231,8 @@ hr {
 
   #cart-resume div button:first-of-type{
     background-color: var(--azul-electrico);
+    font-family: "Open Sans", sans-serif, system-ui;
+    font-weight: 500;
   }
   #cart-resume div button:first-of-type:hover{
     box-shadow: 0 0 .5rem var(--azul-electrico);
@@ -229,6 +240,8 @@ hr {
 
   #cart-resume div button:last-of-type{
     background-color: var(--rojo);
+    font-family: "Open Sans", sans-serif, system-ui;
+    font-weight: 500;
   }
   #cart-resume div button:last-of-type:hover{
     box-shadow: 0 0 .5rem var(--rojo);
@@ -259,13 +272,18 @@ hr {
   
   img {
     border-radius: 0.5rem 0 0 0.5rem;
-    width: 255px;
-    height: 255px;
+    width: 254px;
+    height: 254px;
   }
+
 }
 
 /* Responsive -------------> 1024px */
 @media screen and (max-width: 1024px){
+
+  h1, h2{
+    margin: 1rem 0;
+  }
   
   #cart-section{
     flex-direction: column;
@@ -488,6 +506,8 @@ hr {
     border-radius: .5rem;
     box-shadow: 0 0 0 transparent;
     transition: box-shadow .5s;
+    font-family: "Open Sans", sans-serif, system-ui;
+    font-weight: 500;
   }
 
   #cart-resume div button:first-of-type{
@@ -539,6 +559,11 @@ hr {
 
 /* Responsive -------------> 768px */
 @media screen and (max-width: 768px){
+
+  h1, h2{
+    margin: 1rem;
+  }
+  
   .cart-item{
     margin: 1rem 2rem;
   }
@@ -593,6 +618,10 @@ hr {
 
 /* Responsive -------------> 480px */
 @media screen and (max-width: 480px){
+
+  h1, h2{
+    margin: 1rem;
+  }
 
   #cart-article{
     margin: 0 1rem;
