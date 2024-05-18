@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neon Games - Carro de compras</title>
+    <title>Neon Games - Carro</title>
     <link rel="stylesheet" href="/src/styles/cart.css" />
-    <link rel="stylesheet" href="../styles/globals.css">
-    <!-- <link rel="stylesheet" href="/src/styles/index.css"> -->
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <!-- fuentes de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- box icons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="container-navigation">
-          <div class="brand">Icono</div>
+          <div id="brand">
+            <img src="/src/assets/logos/ng-1.svg" alt="">
+          </div>
           <div class="">
             <a href="/src/pages/cart.html" style="color: black">Carrito</a>
           </div>
@@ -24,7 +34,7 @@
           </div>
         </div>
         <div class="navbar-links" id="navbar-links">
-          <a href="/index.html">Inicio</a>
+          <a href="../../index.html">Inicio</a>
           <a href="./products.html">Productos</a>
           <a href="./about.html">Nosotros</a>
           <a href="./contact.html">Contacto</a>
@@ -33,9 +43,9 @@
       </nav>
     </header>
     <main id="cart-page">
-      <h1>Productos seleccionados</h1>
-      <section id="cart-content">
-        <article id="cart-section">
+      <h1>Resumen de productos</h1>
+      <section id="cart-section">
+        <article id="cart-article">
           <div id="cart-list">
             <div id="card-title">
               <h2>Lista de productos</h2>
@@ -57,19 +67,26 @@
                 </div>
               </div>
               <div class="item-details_commercial">
-                <label for="input-price">Precio:</label>
-                <input
-                  type="text"
-                  id="input-price"
-                  placeholder="$12345"
-                  disabled
-                />
-                <label for="input-amount">Cantidad:</label>
-                <input type="text" id="input-amount" placeholder="1" disabled />
+                <div>
+                  <div>
+                    <h4>Precio:</h4>
+                    <p>$12345</p>
+                  </div>
+                  <div>
+                    <h4>Cantidad:</h4>
+                    <p>1</p>
+                  </div>
+                </div>
                 <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
+                  <button class="delete-button">
+                    <i class="bx bx-trash"></i>
+                  </button>
+                  <button class="decrement-button">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <button class="increment-button">
+                    <i class="bx bx-plus"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -92,19 +109,26 @@
                 </div>
               </div>
               <div class="item-details_commercial">
-                <label for="input-price">Precio:</label>
-                <input
-                  type="text"
-                  id="input-price"
-                  placeholder="$12345"
-                  disabled
-                />
-                <label for="input-amount">Cantidad:</label>
-                <input type="text" id="input-amount" placeholder="1" disabled />
+                <div>
+                  <div>
+                    <h4>Precio:</h4>
+                    <p>$12345</p>
+                  </div>
+                  <div>
+                    <h4>Cantidad:</h4>
+                    <p>1</p>
+                  </div>
+                </div>
                 <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
+                  <button class="delete-button">
+                    <i class="bx bx-trash"></i>
+                  </button>
+                  <button class="decrement-button">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <button class="increment-button">
+                    <i class="bx bx-plus"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -127,19 +151,26 @@
                 </div>
               </div>
               <div class="item-details_commercial">
-                <label for="input-price">Precio:</label>
-                <input
-                  type="text"
-                  id="input-price"
-                  placeholder="$12345"
-                  disabled
-                />
-                <label for="input-amount">Cantidad:</label>
-                <input type="text" id="input-amount" placeholder="1" disabled />
+                <div>
+                  <div>
+                    <h4>Precio:</h4>
+                    <p>$12345</p>
+                  </div>
+                  <div>
+                    <h4>Cantidad:</h4>
+                    <p>1</p>
+                  </div>
+                </div>
                 <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
+                  <button class="delete-button">
+                    <i class="bx bx-trash"></i>
+                  </button>
+                  <button class="decrement-button">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <button class="increment-button">
+                    <i class="bx bx-plus"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -155,21 +186,64 @@
                 <span>Age of Mythology</span>
                 <span>$12345</span>
               </li>
-              <hr />
               <li class="list-item">
                 <span>Battlefield 2042</span>
                 <span>$12345</span>
               </li>
-              <hr />
               <li class="list-item">
                 <span>The forest</span>
                 <span>$12345</span>
               </li>
             </ul>
+            <div>
+              <ul>
+                <li>Precio total:</li>
+                <li>$12345</li>
+              </ul>
+            </div>
+            <div>
+              <button>Confirmar compra</button>
+              <button>Limpiar carro</button>
+            </div>
           </div>
         </article>
       </section>
     </main>
-    <footer></footer>
+    <!-- footer section -->
+  <footer>
+    <div class="container-footer">
+      <div class="brand">
+        <img src="" alt="logo">
+        <h3>Neon Games</h3>
+      </div>
+      <div class="container-sections">
+        <div class="content">
+          <div class="social-footer">
+            <a href="#">
+              <i class='bx bxl-twitter links-social-footer'></i>
+            </a>
+            <a href="#"><i class='bx bxl-facebook links-social-footer'></i></a>
+            <a href="#"><i class='bx bxl-linkedin links-social-footer'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt links-social-footer'></i></a>
+          </div>
+          <p class="direction-footer">Av. Innovación 1234, Piso 5
+            Barrio Tecnológico
+            Ciudad Futuro, CP 56789
+            República Digital
+          </p>
+        </div>
+        <div class="contact-footer">
+          <a class="website" href="">neongames.com.ar</a>
+          <p>©️2023-2024</p>
+          <p>📱 12312408714</p>
+        </div>
+      </div>
+      <div class="container-links-footer">
+        <a class="links-footer" href="./src/pages/about.html">Quienes somos</a>
+        <a class="links-footer" href="#">Comunidad</a>
+        <a class="links-footer" href="#">Soporte</a>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>

@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background: radial-gradient(circle at center, #333, #000);
+    font-family: "Open Sans", sans-serif, system-ui;
+}
+  
+:root {
+  --morado-oscuro: #8600d8;
+  --rosa-intenso: #f113a8;
+  --azul-electrico: #113bf4;
+  --azul-cielo: #00edff;
+  --rojo: #d13131;
+  --blanco: #f5f5f5;
+  --negro: #333333;
+}
 
 * {
   margin: 0;
@@ -11,14 +26,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-:root {
-  --morado-oscuro: #8600d8;
-  --rosa-intenso: #f113a8;
-  --azul-electrico: #113bf4;
-  --azul-cielo: #00edff;
-  --blanco: #f5f5f5;
-}
-
 /* button return to nav */
 .returnBtn {
   font-size: 3rem;
@@ -29,7 +36,7 @@ body {
   right: 5%;
   background: none;
   border: none;
-  color: white;
+  color: var(--blanco);
   background-image: radial-gradient(circle, black, var(--morado-oscuro) 80%);
   border-radius: 50%;
   z-index: 2;
@@ -47,7 +54,7 @@ header {
 }
 .navbar {
   background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
-  color: #fff;
+  color: var(--blanco);
   padding: 15px 0;
 }
 
@@ -55,13 +62,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.brand {
-  font-size: 24px;
+#brand img {
+  width: 64px;
+  height: 64px;
 }
 
 .navbar-links {
@@ -70,7 +77,7 @@ header {
 }
 
 .navbar-links a {
-  color: #fff;
+  color: var(--blanco);
   text-decoration: none;
   margin-right: 20px;
   transition: color 0.3s ease;
@@ -89,7 +96,7 @@ header {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--blanco);
   margin: 3px 0;
 }
 
@@ -101,7 +108,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: whitesmoke;
+  color: var(--blanco);
 }
 
 /* footer section */
@@ -112,7 +119,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   background: radial-gradient(circle at center, #333, #000);
-  color: white;
+  color: var(--blanco);
   font-size: 0.7rem;
 }
 .container-footer {
@@ -150,7 +157,7 @@ footer {
   justify-content: center;
 }
 .links-social-footer {
-  color: white;
+  color: var(--blanco);
   font-size: 1.2rem;
   padding: 5px;
 }
@@ -164,7 +171,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  color: white;
+  color: var(--blanco);
   font-size: 1rem;
   text-decoration: none;
 }
