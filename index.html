@@ -19,25 +19,27 @@
   <header>
     <nav class="navbar">
       <div class="container-navigation">
-        <div id="brand">
+        <div class="brand">
           <img src="/src/assets/logos/ng-1.svg" alt="">
         </div>
-        <div class="">
-          <a href="/src/pages/cart.html" style="color: black;">Carrito</a>
+        <div class="navbar-links" id="navbar-links">
+          <a href="../../index.html">Inicio</a>
+          <a href="./src/pages/products.html">Productos</a>
+          <a href="./about.html">Nosotros</a>
+          <a href="./contact.html">Contacto</a>
+          <a href="./dashboard.html">Dashboard</a>
         </div>
-        <div class="">Buscador</div>
+        <div class="search-cart">
+          <div>
+            <a id="cart-btn" href="/src/pages/cart.html"><i class="bx bx-cart-alt search-cart-btn"></i></a>
+          </div>
+          <div id="search-btn"><i class="bx bx-search search-cart-btn"></i></div>
+        </div>
         <div class="hamburger-menu" id="hamburger-menu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
-      </div>
-      <div class="navbar-links" id="navbar-links">
-        <a href="#">Inicio</a>
-        <a href="./src/pages/products.html">Productos</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="./src/pages/contact.html">Contacto</a>
       </div>
     </nav>
   </header>
@@ -295,8 +297,10 @@
   <!-- footer section -->
   <footer>
     <div class="container-footer">
-      <div class="brand">
-        <img src="" alt="logo">
+      <div class="brand-footer">
+        <div class="brand">
+          <img src="./src/assets/logos/ng-1.svg" alt="logo">
+        </div>
         <h3>Neon Games</h3>
       </div>
       <div class="container-sections">

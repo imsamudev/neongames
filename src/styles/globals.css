@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-    background: radial-gradient(circle at center, #333, #000);
-    font-family: "Open Sans", sans-serif, system-ui;
+  background: radial-gradient(circle at center, #333, #000);
+  font-family: "Open Sans", sans-serif, system-ui;
 }
-  
+
 :root {
   --morado-oscuro: #8600d8;
   --rosa-intenso: #f113a8;
@@ -66,16 +66,41 @@ header {
   padding: 0 10px;
 }
 
-#brand img {
+.brand img {
   width: 64px;
   height: 64px;
-}
-
-.navbar-links {
   display: flex;
-  row-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.brand-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+.search-cart {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-cart-btn {
+  font-size: 1.5rem;
+}
+.navbar-links {
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+}
 .navbar-links a {
   color: var(--blanco);
   text-decoration: none;
@@ -88,7 +113,7 @@ header {
 }
 
 .hamburger-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   cursor: pointer;
 }
@@ -98,17 +123,6 @@ header {
   height: 3px;
   background-color: var(--blanco);
   margin: 3px 0;
-}
-
-p,
-label,
-li,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--blanco);
 }
 
 /* footer section */
@@ -176,6 +190,18 @@ footer {
   text-decoration: none;
 }
 @media (min-width: 768px) {
+  .search-cart {
+    width: 10%;
+  }
+  .search-cart-btn {
+    font-size: 2rem;
+  }
+  .navbar-links {
+    display: flex;
+  }
+  .hamburger-menu {
+    display: none;
+  }
   .returnBtn {
     bottom: 1%;
     right: 1%;
