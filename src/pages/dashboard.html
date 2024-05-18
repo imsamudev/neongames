@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neon Games - Panel de control</title>
     <link rel="stylesheet" href="../styles/globals.css" />
     <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="container-navigation">
           <div class="brand">Icono</div>
-          <div class="">
-            <a href="/src/pages/cart.html" style="color: black">Carrito</a>
+          <div>
+            <a id="cart-btn" href="/src/pages/cart.html"><i class="bx bx-cart-alt"></i></a>
           </div>
-          <div class="">Buscador</div>
+          <div id="search-btn"><i class="bx bx-search"></i></div>
           <div class="hamburger-menu" id="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -23,7 +27,7 @@
           </div>
         </div>
         <div class="navbar-links" id="navbar-links">
-          <a href="/index.html">Inicio</a>
+          <a href="../../index.html">Inicio</a>
           <a href="./products.html">Productos</a>
           <a href="./about.html">Nosotros</a>
           <a href="./contact.html">Contacto</a>
@@ -47,9 +51,9 @@
               <div class="product-card-details">
                 <h4>Sons of the Forest</h4>
                 <div>
-                  <button>Ver detalles</button>
-                  <button>Editar</button>
-                  <button>Eliminar</button>
+                  <button class="search-button"><i class="bx bx-search"></i></button>
+                  <button class="edit-button"><i class="bx bx-edit"></i></button>
+                  <button class="delete-button"><i class="bx bx-trash"></i></button>
                 </div>
               </div>
             </div>
@@ -62,9 +66,9 @@
               <div class="product-card-details">
                 <h4>Valheim</h4>
                 <div>
-                  <button>Ver detalles</button>
-                  <button>Editar</button>
-                  <button>Eliminar</button>
+                  <button class="search-button"><i class="bx bx-search"></i></button>
+                  <button class="edit-button"><i class="bx bx-edit"></i></button>
+                  <button class="delete-button"><i class="bx bx-trash"></i></button>
                 </div>
               </div>
             </div>
@@ -77,9 +81,9 @@
               <div class="product-card-details">
                 <h4>Call of Duty Black Ops II</h4>
                 <div>
-                  <button>Ver detalles</button>
-                  <button>Editar</button>
-                  <button>Eliminar</button>
+                  <button class="search-button"><i class="bx bx-search"></i></button>
+                  <button class="edit-button"><i class="bx bx-edit"></i></button>
+                  <button class="delete-button"><i class="bx bx-trash"></i></button>
                 </div>
               </div>
             </div>
@@ -178,6 +182,41 @@
         </div>
       </form>
     </main>
-    <footer></footer>
+    <!-- footer section -->
+  <footer>
+    <div class="container-footer">
+      <div class="brand">
+        <img src="" alt="logo">
+        <h3>Neon Games</h3>
+      </div>
+      <div class="container-sections">
+        <div class="content">
+          <div class="social-footer">
+            <a href="#">
+              <i class='bx bxl-twitter links-social-footer'></i>
+            </a>
+            <a href="#"><i class='bx bxl-facebook links-social-footer'></i></a>
+            <a href="#"><i class='bx bxl-linkedin links-social-footer'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt links-social-footer'></i></a>
+          </div>
+          <p class="direction-footer">Av. Innovación 1234, Piso 5
+            Barrio Tecnológico
+            Ciudad Futuro, CP 56789
+            República Digital
+          </p>
+        </div>
+        <div class="contact-footer">
+          <a class="website" href="">neongames.com.ar</a>
+          <p>©️2023-2024</p>
+          <p>📱 12312408714</p>
+        </div>
+      </div>
+      <div class="container-links-footer">
+        <a class="links-footer" href="./src/pages/about.html">Quienes somos</a>
+        <a class="links-footer" href="#">Comunidad</a>
+        <a class="links-footer" href="#">Soporte</a>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>

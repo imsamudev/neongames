@@ -259,8 +259,8 @@ hr {
   
   img {
     border-radius: 0.5rem 0 0 0.5rem;
-    width: 256px;
-    height: 256px;
+    width: 255px;
+    height: 255px;
   }
 }
 

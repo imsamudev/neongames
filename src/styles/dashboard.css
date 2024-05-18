@@ -4,23 +4,22 @@ hr {
 }
 
 /*! Dashboard styles */
-@media screen and (min-width: 1024px){
-
-  h1{
+@media screen and (min-width: 1024px) {
+  h1 {
     margin: 2rem;
   }
-  h2{
+  h2 {
     margin: 1.5rem 4rem;
   }
 
-  #dashboard-page{
+  #dashboard-page {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-evenly;
   }
 
-  #dashboard-form{
+  #dashboard-form {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -30,14 +29,14 @@ hr {
     margin: 2rem 20rem;
   }
 
-  #dashboard-form input{
+  #dashboard-form input {
     padding: 1rem;
     font-size: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     border: 1px solid transparent;
   }
 
-  #dashboard-form div{
+  #dashboard-form div {
     margin: 1rem;
     display: flex;
     flex-direction: row;
@@ -46,43 +45,43 @@ hr {
     gap: 1.5rem;
   }
 
-  #dashboard-form div button{
+  #dashboard-form div button {
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
-  
+
   /*! Apply button */
-  #dashboard-form div button:first-of-type{
+  #dashboard-form div button:first-of-type {
     padding: 1rem 4rem;
     font-size: 1rem;
     cursor: pointer;
     border: 1px solid transparent;
     box-shadow: 0 0 0 transparent;
-    transition: box-shadow .5s;
+    transition: box-shadow 0.5s;
     background-color: var(--azul-electrico);
   }
 
-  #dashboard-form div button:first-of-type:hover{
-    box-shadow: 0 0 .5rem var(--azul-electrico);
+  #dashboard-form div button:first-of-type:hover {
+    box-shadow: 0 0 0.5rem var(--azul-electrico);
   }
 
   /*! Clean button */
-  #dashboard-form div button:last-of-type{
+  #dashboard-form div button:last-of-type {
     padding: 1rem 4rem;
     font-size: 1rem;
     cursor: pointer;
     border: 1px solid transparent;
     box-shadow: 0 0 0 transparent;
-    transition: box-shadow .5s;
-    background-color: var(--rosa-intenso);
+    transition: box-shadow 0.5s;
+    background-color: var(--rojo);
   }
 
-  #dashboard-form div button:last-of-type:hover{
-    box-shadow: 0 0 .5rem var(--rosa-intenso);
+  #dashboard-form div button:last-of-type:hover {
+    box-shadow: 0 0 0.5rem var(--rojo);
   }
 
   /*! Dashboard data container */
-  #dashboard-content{
+  #dashboard-content {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -90,21 +89,21 @@ hr {
     gap: 2rem;
     padding: 2rem;
     margin: 2rem 4rem;
-    border: 1px solid red;
   }
 
   /*! Dashboard data */
-  #dashboard-management{
+  #dashboard-management {
     border: 1px solid var(--blanco);
     width: 65%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
-  #dashboard-management .board-title, #dashboard-resume .board-title{
+  #dashboard-management .board-title,
+  #dashboard-resume .board-title {
     border-bottom: 1px solid var(--blanco);
   }
 
-  #products-list{
+  #products-list {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -114,25 +113,25 @@ hr {
   }
 
   /*! Product item */
-  #products-list .product-list-item{
+  #products-list .product-list-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     border: 1px solid var(--blanco);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin: 0 1rem;
   }
 
-  #products-list .product-list-item img{
+  #products-list .product-list-item img {
     width: 50%;
     height: 100%;
-    border-radius: .5rem 0 0 .5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
   }
 
   /*! Product card details */
-  #products-list .product-card-details{
+  #products-list .product-card-details {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -145,7 +144,7 @@ hr {
   }
 
   /*! Product card buttons */
-  #products-list .product-card-details div{
+  #products-list .product-card-details div {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -153,41 +152,36 @@ hr {
     gap: 1rem;
   }
 
-  #products-list .product-card-details div button{
-    border-radius: .5rem;
-    padding: .5rem;
+  #products-list .product-card-details div button {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     border: 1px solid transparent;
   }
 
-
   /*! Dashboard resume */
-  #dashboard-resume{
+  #dashboard-resume {
     width: 35%;
     height: 380px;
     border: 1px solid var(--blanco);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
-  /* #product-details{
-
-  } */
-
-  .product-detail{
+  .product-detail {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-evenly;
     /* flex-grow: 1; */
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 1rem 0;
   }
 
-  .product-detail ul{
+  .product-detail ul {
     list-style-type: none;
     padding: 1rem;
   }
 
-  .product-detail ul li{
+  .product-detail ul li {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -195,20 +189,89 @@ hr {
     margin: 1rem 0;
   }
 
+  #cart-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: var(--blanco);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 transparent;
+    background-color: transparent;
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+  }
 
+  #cart-btn:hover {
+    cursor: pointer;
+    /* background-color: var(--azul-electrico);
+    color: var(--rosa-intenso); */
+    box-shadow: 0 0 0.5rem var(--azul-cielo);
+  }
 
+  #search-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: var(--blanco);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 transparent;
+    background-color: transparent;
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+  }
 
+  #search-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem var(--azul-cielo);
+  }
 
+  .search-button,
+  .edit-button,
+  .delete-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow .5s;
+  }
+
+  .search-button{
+    background-color: var(--azul-electrico);
+  }
+  .edit-button{
+    background-color: var(--rosa-intenso);
+  }
+  .delete-button{
+    background-color: var(--rojo);
+  }
+
+  .search-button:hover {
+    box-shadow: 0 0 .5rem var(--azul-electrico);
+  }
+
+  .edit-button:hover {
+    box-shadow: 0 0 .5rem var(--rosa-intenso);
+  }
+  .delete-button:hover {
+    box-shadow: 0 0 .5rem var(--rojo);
+  }
 }
-@media screen and (max-width: 1024px){
-  
+@media screen and (max-width: 1024px) {
 }
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px) {
 }
-@media screen and (max-width: 576px){
-
+@media screen and (max-width: 576px) {
 }
-@media screen and (max-width: 480px){
-
+@media screen and (max-width: 480px) {
 }
