@@ -42,6 +42,7 @@ body {
   z-index: 2;
   cursor: pointer;
 }
+
 .returnBtn:hover {
   transform: scale(1.2);
   background-image: radial-gradient(circle, black, var(--azul-electrico) 90%);
@@ -52,6 +53,7 @@ body {
 header {
   width: 100%;
 }
+
 .navbar {
   background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
   color: var(--blanco);
@@ -73,6 +75,7 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .brand-footer {
   display: flex;
   flex-direction: row;
@@ -92,16 +95,19 @@ header {
 .search-cart-btn {
   font-size: 1.5rem;
 }
+
 .navbar-links {
   display: none;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
+
 .navbar-links.active {
   display: flex;
   flex-direction: column;
 }
+
 .navbar-links a {
   color: var(--blanco);
   text-decoration: none;
@@ -179,6 +185,7 @@ footer {
   font-size: 0.7rem;
   margin-top: 20px;
 }
+
 .container-footer {
   width: 95%;
   display: flex;
@@ -189,6 +196,7 @@ footer {
   border: 2px solid rgba(255, 255, 255, 0.1);
   gap: 10px;
 }
+
 .brand {
   display: flex;
   justify-content: center;
@@ -205,30 +213,36 @@ footer {
   align-items: center;
   width: 80%;
 }
+
 .content,
 .contact-footer {
   width: 50%;
   text-align: center;
 }
+
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .social-footer {
   display: flex;
   justify-content: center;
 }
+
 .links-social-footer {
   color: var(--blanco);
   font-size: 1.2rem;
   padding: 5px;
 }
+
 .website {
   text-decoration: none;
   font-size: 1rem;
   color: var(--blanco);
 }
+
 .container-links-footer,
 .links-footer {
   width: 100%;
@@ -238,19 +252,24 @@ footer {
   font-size: 1rem;
   text-decoration: none;
 }
+
 @media (min-width: 768px) {
   .search-cart {
     width: 10%;
   }
+
   .search-cart-btn {
     font-size: 2rem;
   }
+
   .navbar-links {
     display: flex;
   }
+
   .hamburger-menu {
     display: none;
   }
+
   .returnBtn {
     bottom: 1%;
     right: 1%;
@@ -259,20 +278,64 @@ footer {
     width: 65px;
   }
 
+  p,
+  label,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: whitesmoke;
+  }
+}
+
+
+/* Desktop Styles */
+@media(min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .navbar-links a {
+    padding: 0 15px;
+  }
+
+  .feature {
+    width: 30%;
+    margin: 15px;
+  }
+
   footer {
     font-size: 1rem;
   }
+
   .container-footer {
     gap: 50px;
   }
+
   .direction-footer {
     width: 50%;
     word-wrap: break-word;
   }
+
   .container-links-footer,
   .links-footer {
     font-size: 1.3rem;
   }
+
   .links-social-footer {
     font-size: 2rem;
     padding: 5px 15px;

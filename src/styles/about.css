@@ -1,0 +1,83 @@
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+}
+
+.hero h1 {
+    color: #00ffff;
+    font-size: 2.5em;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #121212;
+}
+
+.feature {
+    width: 100%;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature.blue {
+    background-color: #1a1aff;
+}
+
+.feature.purple {
+    background-color: #8000ff;
+}
+
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8000ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5a00b2;
+}
+
+/* Desktop Styles */
+@media(min-width: 768px) {
+
+    .feature {
+        width: 30%;
+        margin: 15px;
+    }
+}
