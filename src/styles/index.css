@@ -1,11 +1,22 @@
-body {
-  background: radial-gradient(circle at center, #333, #000);
+main {
+  width: 100%;
+}
+
+main,
+#Billboard,
+#carousel-1,
+#carousel-2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 50px;
-  font-family: "Open Sans", sans-serif;
+  gap: 3rem;
+}
+
+#Billboard,
+#carousel-1,
+#carousel-2 {
+  width: 90%;
 }
 
 .titles-sections {
@@ -71,17 +82,18 @@ body {
 }
 
 .carousel-container {
-  height: 210px;
+  height: 260px;
   width: 100%;
 }
 
 .carousel {
   width: 90%;
-  height: 260px;
+  height: 100%;
   justify-content: flex-start;
   gap: 25px;
   padding-left: 10px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .offer-card,
@@ -177,6 +189,12 @@ body {
 }
 
 @media (min-width: 769px) {
+  #Billboard,
+  #carousel-1,
+  #carousel-2 {
+    width: 80%;
+  }
+
   .titles-sections {
     font-size: 2rem;
   }
