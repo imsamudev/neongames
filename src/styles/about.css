@@ -1,83 +1,105 @@
-
 .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-size: cover;
+  text-align: center;
+  padding: 50px 20px;
+  background-size: cover;
 }
 
 .hero h1 {
-    color: #00ffff;
-    font-size: 2.5em;
+  color: #00ffff;
+  font-size: 2.5em;
 }
 
 .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background-color: #121212;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #121212;
 }
 
 .feature {
-    width: 100%;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+  width: 100%;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .feature.blue {
-    background-color: #1a1aff;
+  background-color: #1a1aff;
 }
 
 .feature.purple {
-    background-color: #8000ff;
+  background-color: #8000ff;
 }
 
 .contact {
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 1rem 4rem;
+  /* text-align: center; */
 }
 
 .contact h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+.form-group select {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: "Open Sans", sans-serif, system-ui;
+  width: 50%;
 }
 
 form button {
-    background-color: #8000ff;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #8000ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 form button:hover {
-    background-color: #5a00b2;
+  background-color: #5a00b2;
+}
+
+.error {
+  border: 2px solid var(--rojo);
+}
+.error-message {
+  color: var(--rojo);
+  font-size: 0.9em;
+  margin-top: 5px;
 }
 
 /* Desktop Styles */
-@media(min-width: 768px) {
-
-    .feature {
-        width: 30%;
-        margin: 15px;
-    }
+@media (min-width: 768px) {
+  .feature {
+    width: 30%;
+    margin: 15px;
+  }
 }
