@@ -3,173 +3,263 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neon Games - Carro de compras</title>
-    <link rel="stylesheet" href="/src/styles/cart.css" />
-    <link rel="stylesheet" href="../styles/globals.css">
-    <!-- <link rel="stylesheet" href="/src/styles/index.css"> -->
+    <title>Neon Games - Carro</title>
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <!-- fuentes de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- box icons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="container-navigation">
-          <div class="brand">Icono</div>
-          <div class="">
-            <a href="/src/pages/cart.html" style="color: black">Carrito</a>
+          <div class="brand">
+            <img src="../assets/logos/ng-1.svg" alt="neon-games" />
           </div>
-          <div class="">Buscador</div>
+          <div class="navbar-links" id="navbar-links">
+            <a href="../../index.html">Inicio</a>
+            <a href="./src/pages/products.html">Productos</a>
+            <a href="./about.html">Nosotros</a>
+            <a href="./contact.html">Contacto</a>
+            <a href="./dashboard.html">Dashboard</a>
+          </div>
+          <div class="search-cart">
+            <div>
+              <a id="cart-btn" href="/src/pages/cart.html"
+                ><i class="bx bx-cart-alt search-cart-btn"></i
+              ></a>
+            </div>
+            <div id="search-btn">
+              <i class="bx bx-search search-cart-btn"></i>
+            </div>
+          </div>
           <div class="hamburger-menu" id="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
         </div>
-        <div class="navbar-links" id="navbar-links">
-          <a href="/index.html">Inicio</a>
-          <a href="./products.html">Productos</a>
-          <a href="./about.html">Nosotros</a>
-          <a href="./contact.html">Contacto</a>
-          <a href="./dashboard.html">Dashboard</a>
-        </div>
       </nav>
     </header>
     <main id="cart-page">
-      <h1>Productos seleccionados</h1>
-      <section id="cart-content">
-        <article id="cart-section">
-          <div id="cart-list">
-            <div id="card-title">
-              <h2>Lista de productos</h2>
-            </div>
+      <h1>Resumen de productos</h1>
+      <section>
+        <h2>Productos agregados</h2>
+        <div id="cart-section">
+          <article id="cart-article">
+            <div id="cart-list">
+              <div id="card-title">
+                <h2>Lista de productos</h2>
+              </div>
 
-            <div class="cart-item">
-              <div class="item-description">
-                <img
-                  src="../assets/games/cover-cards/age-of-mithology_extended-edition.webp"
-                  alt="age-of-mithology_extended-edition"
-                />
-                <div class="item-details">
-                  <h3>Age of Mythology</h3>
-                  <ul>
-                    <li>Genero: Estrategia</li>
-                    <li>Otros títulos: Age of Empires II</li>
-                    <li>Calificación: 5/5</li>
-                  </ul>
+              <div class="cart-item">
+                <div class="item-description">
+                  <img
+                    src="../assets/games/cover-cards/age-of-mithology_extended-edition.webp"
+                    alt="age-of-mithology_extended-edition"
+                  />
+                  <div class="item-details">
+                    <h3>Age of Mythology</h3>
+                    <ul>
+                      <li>Genero: Estrategia</li>
+                      <li>Otros títulos: Age of Empires II</li>
+                      <li>Calificación: 5/5</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item-details_commercial">
+                  <div>
+                    <div>
+                      <h4>Precio:</h4>
+                      <p>$12345</p>
+                    </div>
+                    <div>
+                      <h4>Cantidad:</h4>
+                      <p>1</p>
+                    </div>
+                  </div>
+                  <div class="item-buttons">
+                    <button class="delete-button">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                    <button class="decrement-button">
+                      <i class="bx bx-minus"></i>
+                    </button>
+                    <button class="increment-button">
+                      <i class="bx bx-plus"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="item-details_commercial">
-                <label for="input-price">Precio:</label>
-                <input
-                  type="text"
-                  id="input-price"
-                  placeholder="$12345"
-                  disabled
-                />
-                <label for="input-amount">Cantidad:</label>
-                <input type="text" id="input-amount" placeholder="1" disabled />
-                <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
-                </div>
-              </div>
-            </div>
 
-            <hr />
-
-            <div class="cart-item">
-              <div class="item-description">
-                <img
-                  src="../assets/games/cover-cards/battlefield_2042.webp"
-                  alt="battlefield_2042"
-                />
-                <div class="item-details">
-                  <h3>Battlefield 2042</h3>
-                  <ul>
-                    <li>Genero: FPS</li>
-                    <li>Otros títulos: Battlefield V</li>
-                    <li>Calificación: 5/5</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="item-details_commercial">
-                <label for="input-price">Precio:</label>
-                <input
-                  type="text"
-                  id="input-price"
-                  placeholder="$12345"
-                  disabled
-                />
-                <label for="input-amount">Cantidad:</label>
-                <input type="text" id="input-amount" placeholder="1" disabled />
-                <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
-                </div>
-              </div>
-            </div>
-
-            <hr />
-
-            <div class="cart-item">
-              <div class="item-description">
-                <img
-                  src="../assets/games/cover-cards/the-forest.webp"
-                  alt="the-forest"
-                />
-                <div class="item-details">
-                  <h3>The forest</h3>
-                  <ul>
-                    <li>Genero: Survival</li>
-                    <li>Otros títulos: Sons of the forest</li>
-                    <li>Calificación: 5/5</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="item-details_commercial">
-                <label for="input-price">Precio:</label>
-                <input
-                  type="text"
-                  id="input-price"
-                  placeholder="$12345"
-                  disabled
-                />
-                <label for="input-amount">Cantidad:</label>
-                <input type="text" id="input-amount" placeholder="1" disabled />
-                <div class="item-buttons">
-                  <button class="delete-button">Eliminar</button>
-                  <button class="decrement-button">Quitar</button>
-                  <button class="increment-button">Agregar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div id="cart-resume">
-            <div>
-              <h2>Resumen de productos</h2>
-            </div>
-            <ul id="items-list">
-              <li class="list-item">
-                <span>Age of Mythology</span>
-                <span>$12345</span>
-              </li>
               <hr />
-              <li class="list-item">
-                <span>Battlefield 2042</span>
-                <span>$12345</span>
-              </li>
+
+              <div class="cart-item">
+                <div class="item-description">
+                  <img
+                    src="../assets/games/cover-cards/battlefield_2042.webp"
+                    alt="battlefield_2042"
+                  />
+                  <div class="item-details">
+                    <h3>Battlefield 2042</h3>
+                    <ul>
+                      <li>Genero: FPS</li>
+                      <li>Otros títulos: Battlefield V</li>
+                      <li>Calificación: 5/5</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item-details_commercial">
+                  <div>
+                    <div>
+                      <h4>Precio:</h4>
+                      <p>$12345</p>
+                    </div>
+                    <div>
+                      <h4>Cantidad:</h4>
+                      <p>1</p>
+                    </div>
+                  </div>
+                  <div class="item-buttons">
+                    <button class="delete-button">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                    <button class="decrement-button">
+                      <i class="bx bx-minus"></i>
+                    </button>
+                    <button class="increment-button">
+                      <i class="bx bx-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
               <hr />
-              <li class="list-item">
-                <span>The forest</span>
-                <span>$12345</span>
-              </li>
-            </ul>
-          </div>
-        </article>
+
+              <div class="cart-item">
+                <div class="item-description">
+                  <img
+                    src="../assets/games/cover-cards/the-forest.webp"
+                    alt="the-forest"
+                  />
+                  <div class="item-details">
+                    <h3>The forest</h3>
+                    <ul>
+                      <li>Genero: Survival</li>
+                      <li>Otros títulos: Sons of the forest</li>
+                      <li>Calificación: 5/5</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item-details_commercial">
+                  <div>
+                    <div>
+                      <h4>Precio:</h4>
+                      <p>$12345</p>
+                    </div>
+                    <div>
+                      <h4>Cantidad:</h4>
+                      <p>1</p>
+                    </div>
+                  </div>
+                  <div class="item-buttons">
+                    <button class="delete-button">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                    <button class="decrement-button">
+                      <i class="bx bx-minus"></i>
+                    </button>
+                    <button class="increment-button">
+                      <i class="bx bx-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div id="cart-resume">
+              <div>
+                <h2>Resumen de productos</h2>
+              </div>
+              <ul id="items-list">
+                <li class="list-item">
+                  <span>Age of Mythology</span>
+                  <span>$12345</span>
+                </li>
+                <li class="list-item">
+                  <span>Battlefield 2042</span>
+                  <span>$12345</span>
+                </li>
+                <li class="list-item">
+                  <span>The forest</span>
+                  <span>$12345</span>
+                </li>
+              </ul>
+              <div>
+                <ul>
+                  <li>Precio total:</li>
+                  <li>$12345</li>
+                </ul>
+              </div>
+              <div>
+                <button>Confirmar compra</button>
+                <button>Limpiar carro</button>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- footer section -->
+    <footer>
+      <div class="container-footer">
+        <div class="brand-footer">
+          <div class="brand">
+            <img src="../assets/logos/ng-1.svg" alt="logo" />
+          </div>
+          <h3>Neon Games</h3>
+        </div>
+        <div class="container-sections">
+          <div class="content">
+            <div class="social-footer">
+              <a href="https://x.com/" target="_blank">
+                <i class="bx bxl-twitter links-social-footer"></i>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="bx bxl-facebook links-social-footer"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="bx bxl-linkedin links-social-footer"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="bx bxl-instagram-alt links-social-footer"></i
+              ></a>
+            </div>
+            <p class="direction-footer">
+              Av. Innovación 1234, Piso 5 Barrio Tecnológico Ciudad Futuro, CP
+              56789 República Digital
+            </p>
+          </div>
+          <div class="contact-footer">
+            <a class="website" href="">neongames.com.ar</a>
+            <p>©️2023-2024</p>
+            <p>📱 12312408714</p>
+          </div>
+        </div>
+        <div class="container-links-footer">
+          <a class="links-footer" href="./about.html">Quienes somos</a>
+          <a class="links-footer" href="./contact.html">Comunidad</a>
+          <a class="links-footer" href="./contact.html">Soporte</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

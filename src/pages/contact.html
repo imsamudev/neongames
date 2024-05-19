@@ -1,39 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeonGames | Videogames Store</title>
-  <link rel="stylesheet" href="../styles/index.css">
-  <link rel="stylesheet" href="../styles/contact.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeonGames | Videogames Store</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/contact.css">
+  </head>
 
 <body>
   <header>
     <nav class="navbar">
-        <div class="container-navigation">
-            <div class="brand">Icono</div>
-            <div class="cart">Carrito</div>
-            <div class="search">Buscador</div>
-            <div class="hamburger-menu" id="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+      <div class="container-navigation">
+        <div class="brand">
+          <img src="../assets/logos/ng-1.svg" alt="neon-games" />
         </div>
         <div class="navbar-links" id="navbar-links">
-            <a href="/index.html">Inicio</a>
-            <a href="/src/pages/products.html">Productos</a>
-            <a href="/src/pages/about.html">Quienes Somos</a>
-            <a href="./contact.html">Contacto</a>
+          <a href="../../index.html">Inicio</a>
+          <a href="./products.html">Productos</a>
+          <a href="./about.html">Nosotros</a>
+          <a href="./contact.html">Contacto</a>
+          <a href="./dashboard.html">Dashboard</a>
         </div>
+        <div class="search-cart">
+          <div>
+            <a id="cart-btn" href="./cart.html"
+              ><i class="bx bx-cart-alt search-cart-btn"></i
+            ></a>
+          </div>
+          <div id="search-btn">
+            <i class="bx bx-search search-cart-btn"></i>
+          </div>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
     </nav>
-</header>
+  </header>
   <main>
   
     <section class="contact">
@@ -63,7 +77,49 @@
       </form>
   </section>
   </main>
-
+  <!-- footer section -->
+  <footer>
+    <div class="container-footer">
+      <div class="brand-footer">
+        <div class="brand">
+          <img src="../assets/logos/ng-1.svg" alt="logo" />
+        </div>
+        <h3>Neon Games</h3>
+      </div>
+      <div class="container-sections">
+        <div class="content">
+          <div class="social-footer">
+            <a href="https://x.com/" target="_blank">
+              <i class="bx bxl-twitter links-social-footer"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook links-social-footer"></i
+            ></a>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><i class="bx bxl-linkedin links-social-footer"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram-alt links-social-footer"></i
+            ></a>
+          </div>
+          <p class="direction-footer">
+            Av. Innovación 1234, Piso 5 Barrio Tecnológico Ciudad Futuro, CP
+            56789 República Digital
+          </p>
+        </div>
+        <div class="contact-footer">
+          <a class="website" href="">neongames.com.ar</a>
+          <p>©️2023-2024</p>
+          <p>📱 12312408714</p>
+        </div>
+      </div>
+      <div class="container-links-footer">
+        <a class="links-footer" href="./about.html">Quienes somos</a>
+        <a class="links-footer" href="./contact.html">Comunidad</a>
+        <a class="links-footer" href="./contact.html">Soporte</a>
+      </div>
+    </div>
+  </footer>
   <script src="/src/scripts/navbar.js"></script>
 
 </body>
