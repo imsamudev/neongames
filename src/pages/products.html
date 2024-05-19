@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Neon Games - Productos</title>
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/logos/ng-1.svg" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container-navigation">
+          <div class="brand">
+            <img src="../assets/logos/ng-1.svg" alt="neon-games" />
+          </div>
+          <div class="navbar-links" id="navbar-links">
+            <a href="../../index.html">Inicio</a>
+            <a href="./products.html">Productos</a>
+            <a href="./about.html">Nosotros</a>
+            <a href="./contact.html">Contacto</a>
+            <a href="./dashboard.html">Dashboard</a>
+          </div>
+          <div class="search-cart">
+            <div>
+              <a id="cart-btn" href="./cart.html"
+                ><i class="bx bx-cart-alt search-cart-btn"></i
+              ></a>
+            </div>
+            <div id="search-btn">
+              <i class="bx bx-search search-cart-btn"></i>
+            </div>
+          </div>
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <button class="returnBtn"><i class="bx bx-chevron-up"></i></button>
+      <section id="search-filters-products">
+        <h2 class="titles-sections-products">Buscar productos</h2>
+        <div class="search-filter">
+          <input type="text" id="search-input" placeholder="Buscar..." />
+          <button id="search-button">¡Vamos!</button>
+        </div>
+      </section>
+      <section id="products-container">
+        <div class="grid-container-cards">
+          <div class="border-card">
+            <div class="offer-card">
+              <img
+                src="../assets/games/coversSmall/age-of-empires_II_DE.webp"
+                alt="age-of-empires_II_definitive-edition"
+                class="cover"
+              />
+              <h1 class="discount-tag">-50%</h1>
+
+              <div class="description">
+                <h2 class="title-card">Age of Empires II Definitive Edition</h2>
+                <!-- <h3 class="discount-price">$13,99</h3> segunda etapa -->
+                <h3 class="price">$6,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/age-of-mithology_extended-edition.webp"
+                alt="age-of-mithology_extend-edition"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Age of Mythology Extend Edition</h2>
+                <h3 class="price">$25,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/apex-legends.webp"
+                alt="apex-legends"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">APEX Legends</h2>
+                <h3 class="price">FREE</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/battlefield_2042.webp"
+                alt="battlefield_2042"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Battlefield 2042</h2>
+                <h3 class="price">$50,00 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/battlefield_V.webp"
+                alt="battlefield_V"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Battlefield V</h2>
+                <h3 class="price">$41,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/call-of-duty_black-ops-II.webp"
+                alt="call-of-duty_black-ops-II"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Call Of Duty Black Ops</h2>
+                <h3 class="price">$51,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/company-of-heroes.webp"
+                alt="company-of-heroes"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Company of heroes</h2>
+                <h3 class="price">$2,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/company-of-heroes_2.webp"
+                alt="company-of-heroes_2"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Company of heroes 2</h2>
+                <h3 class="price">$2.99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/company-of-heroes_3.webp"
+                alt="company-of-heroes_3"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Company of heroes 3</h2>
+                <h3 class="price">$21,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/counter-strike_2.webp"
+                alt="counter-strike_2"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Counter Strike 2</h2>
+                <h3 class="price">FREE</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/dead-space_remake.webp"
+                alt="dead-space_remake"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Dead Space REMAKE</h2>
+                <h3 class="price">$51,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/dead-space_2.webp"
+                alt="dead-space_2"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Dead Space 2</h2>
+                <h3 class="price">$13,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/dead-space_3.webp"
+                alt="dead-space_3"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Dead Space 3</h2>
+                <h3 class="price">$13.99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/dota_2.webp"
+                alt="dota_2"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Dota 2</h2>
+                <h3 class="price">FREE</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/ea-sports-fc_24.webp"
+                alt="ea-sports-fc_24"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">EA SPORTS FC24</h2>
+                <h3 class="price">$59,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/ea-sports_wrc.webp"
+                alt="ea-sports_wrc"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">EA SPORTS WRC</h2>
+                <h3 class="price">$39,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/f1_2024.webp"
+                alt="f1_2024"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">F1 2024</h2>
+                <h3 class="price">$59,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/flatout_2.webp"
+                alt="flatout_2"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">FlatOut 2</h2>
+                <h3 class="price">$4,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/forza-horizon_5.webp"
+                alt="forza-horizon_5"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Forza Horizon 5</h2>
+                <h3 class="price">$25,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/moto-gp_2024.webp"
+                alt="moto-gp_2024"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">MotoGP 2024</h2>
+                <h3 class="price">$40,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/nba_2k24.webp"
+                alt="nba_2k24"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">NBA 2K24</h2>
+                <h3 class="price">$49,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/nfs_heat.webp"
+                alt="nfs_heat_DE"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Need for Speed Heat DE</h2>
+                <h3 class="price">$60,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/pubg.webp"
+                alt="pubg"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">PUBG Battlegrounds</h2>
+                <h3 class="price">FREE</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/raft.webp"
+                alt="raft"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Raft</h2>
+                <h3 class="price">$11,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/sons-of-the-forest.webp"
+                alt="sons-of-the-forest"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Sons of the forest</h2>
+                <h3 class="price">$11,99</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/subnautica.webp"
+                alt="subnautica"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Subnautica</h2>
+                <h3 class="price">$9,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/subnautica_below-zero.webp"
+                alt="subnautica_below-zero"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Subnautica Below Zero</h2>
+                <h3 class="price">$9,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/the-forest.webp"
+                alt="the-forest"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">The Forest</h2>
+                <h3 class="price">$7,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/valheim.webp"
+                alt="valheim"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Valheim</h2>
+                <h3 class="price">$7,99 USD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="border-card">
+            <div class="card">
+              <img
+                src="../assets/games/coversSmall/warhammer_III_total-war.webp"
+                alt="warhammer_III_total-war"
+                class="cover"
+              />
+              <div class="description">
+                <h2 class="title-card">Warhammer III Total War</h2>
+                <h3 class="price">$41,99 USD</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+      <div class="container-footer">
+        <div class="brand-footer">
+          <div class="brand">
+            <img src="../assets/logos/ng-1.svg" alt="logo" />
+          </div>
+          <h3>Neon Games</h3>
+        </div>
+        <div class="container-sections">
+          <div class="content">
+            <div class="social-footer">
+              <a href="https://x.com/" target="_blank">
+                <i class="bx bxl-twitter links-social-footer"></i>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="bx bxl-facebook links-social-footer"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="bx bxl-linkedin links-social-footer"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="bx bxl-instagram-alt links-social-footer"></i
+              ></a>
+            </div>
+            <p class="direction-footer">
+              Av. Innovación 1234, Piso 5 Barrio Tecnológico Ciudad Futuro, CP
+              56789 República Digital
+            </p>
+          </div>
+          <div class="contact-footer">
+            <a class="website" href="">neongames.com.ar</a>
+            <p>©️2023-2024</p>
+            <p>📱 12312408714</p>
+          </div>
+        </div>
+        <div class="container-links-footer">
+          <a class="links-footer" href="./about.html">Quienes somos</a>
+          <a class="links-footer" href="./contact.html">Comunidad</a>
+          <a class="links-footer" href="./contact.html">Soporte</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/products.js"></script>
+  </body>
+</html>

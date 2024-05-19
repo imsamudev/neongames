@@ -1,0 +1,252 @@
+main {
+  width: 100%;
+  gap: 40px;
+}
+
+main,
+#search-filters-products,
+#products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* products-section */
+#search-filters-products {
+  width: 80%;
+  margin: 50px;
+  gap: 50px;
+}
+
+.titles-sections-products {
+  color: var(--blanco);
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.search-filter {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#search-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #00edff;
+  box-shadow: 0px 0px 10px var(--azul-cielo);
+  border-radius: 20px;
+}
+#search-input:focus {
+  color: #f113a8;
+  box-shadow: 0px 0px 10px var(--rosa-intenso);
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: var(--azul-cielo);
+  padding-left: 10px;
+}
+#search-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: var(--azul-cielo);
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#search-button:hover {
+  background: linear-gradient(
+    to top,
+    var(--rosa-intenso),
+    var(--morado-oscuro)
+  );
+  transform: scale(1.05);
+  transition: ease 0.2s;
+}
+.grid-container-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 10px;
+}
+
+.offer-card,
+.card {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+.offer-card:hover,
+.card:hover {
+  transition: ease 0.3s;
+  transform: scale(1.1);
+}
+.cover {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  background: linear-gradient(to bottom, var(--azul-electrico), black);
+  height: 35%;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.title-card {
+  width: 65%;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  line-height: 125%;
+  text-align: left;
+  position: absolute;
+  font-size: 0.6rem;
+  left: 2%;
+  top: 10%;
+}
+.price {
+  width: 30%;
+  word-wrap: break-word;
+  text-align: right;
+  font-size: 0.6rem;
+  -webkit-text-stroke: 0.4px var(--azul-electrico);
+  color: #00edff;
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  margin-right: 10px;
+}
+/* elementos de oferta */
+.discount-tag {
+  position: absolute;
+  background-color: #f113a8;
+  -webkit-text-stroke: black 0.5px;
+  font-size: 1.5rem;
+  top: 0%;
+  padding: 3px;
+  border-radius: 10px 0px 10px 0;
+}
+.discount-price {
+  position: absolute;
+  text-decoration: line-through;
+  font-size: 0.7rem;
+  color: gray;
+  right: 0;
+  bottom: 50%;
+  margin-right: 10px;
+}
+/* ------------------- */
+
+/* bordes */
+.offer-card,
+.card {
+  border-radius: 10px 10px 10px 0;
+}
+.cover {
+  border-radius: 10px 10px 0px 0;
+}
+.description {
+  border-radius: 0 0 20px 0;
+}
+
+@media (min-width: 480px) {
+  .offer-card,
+  .card {
+    height: 120px;
+  }
+}
+
+@media (min-width: 576px) {
+  #search-input {
+    width: 70%;
+  }
+  .grid-container-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container-cards {
+    width: 90%;
+    gap: 15px;
+  }
+  .offer-card,
+  .card {
+    height: 150px;
+  }
+  .title-card {
+    font-size: 0.8rem;
+  }
+  .price {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    gap: 60px;
+  }
+  #search-input {
+    width: 60%;
+  }
+  .grid-container-cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 20px;
+  }
+  .offer-card,
+  .card {
+    height: 120px;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    gap: 90px;
+  }
+  .grid-container-cards {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+  }
+  .offer-card,
+  .card {
+    height: 150px;
+  }
+  .title-card {
+    font-size: 1rem;
+  }
+}
+
+/*pantallas muy grandes */
+@media (min-width: 1680px) {
+  .grid-container-cards {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 40px;
+  }
+}

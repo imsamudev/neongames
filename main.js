@@ -1,10 +1,3 @@
-const hamburgerMenu = document.getElementById("hamburger-menu");
-const navbarLinks = document.getElementById("navbar-links");
-
-hamburgerMenu.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
-});
-
 // billboard section
 let index = 0;
 const images = document.querySelectorAll(".billboard-home-img");
@@ -23,8 +16,7 @@ function nextImage() {
   index = (index + 1) % images.length;
   showImage();
 }
-setInterval(nextImage, 5000);
-
+setInterval(nextImage, 4000);
 // CAROUSEL SECTION
 const carousels = document.querySelectorAll(".carousel-container");
 carousels.forEach((carouselContainer) => {
@@ -32,8 +24,8 @@ carousels.forEach((carouselContainer) => {
   let isHolding = false;
   const carousel = carouselContainer.querySelector(".carousel");
   const cards = carouselContainer.querySelectorAll(".card, .offer-card");
-  const prevBtn = carouselContainer.querySelector("#prevBtn");
-  const nextBtn = carouselContainer.querySelector("#nextBtn");
+  const prevBtns = carouselContainer.querySelectorAll(".prevBtn");
+  const nextBtns = carouselContainer.querySelectorAll(".nextBtn");
 
   function updateIndex() {
     const cardWidth = cards[0].offsetWidth;
@@ -74,26 +66,29 @@ carousels.forEach((carouselContainer) => {
       setTimeout(() => handleContinuousScroll(direction), 300);
     }
   }
-  prevBtn.addEventListener("mousedown", () => {
-    isHolding = true;
-    handleContinuousScroll("prev");
+  prevBtns.forEach((prevBtn) => {
+    prevBtn.addEventListener("mousedown", () => {
+      isHolding = true;
+      handleContinuousScroll("prev");
+    });
+    prevBtn.addEventListener("mouseup", () => {
+      isHolding = false;
+    });
+    prevBtn.addEventListener("mouseleave", () => {
+      isHolding = false;
+    });
   });
-  nextBtn.addEventListener("mousedown", () => {
-    isHolding = true;
-    handleContinuousScroll("next");
-  });
-  prevBtn.addEventListener("mouseup", () => {
-    isHolding = false;
-  });
-  nextBtn.addEventListener("mouseup", () => {
-    isHolding = false;
-  });
-  prevBtn.addEventListener("mouseleave", () => {
-    isHolding = false;
-  });
-
-  nextBtn.addEventListener("mouseleave", () => {
-    isHolding = false;
+  nextBtns.forEach((nextBtn) => {
+    nextBtn.addEventListener("mousedown", () => {
+      isHolding = true;
+      handleContinuousScroll("next");
+    });
+    nextBtn.addEventListener("mouseup", () => {
+      isHolding = false;
+    });
+    nextBtn.addEventListener("mouseleave", () => {
+      isHolding = false;
+    });
   });
 
   let startX;
