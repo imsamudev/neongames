@@ -1,0 +1,42 @@
+
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: whitesmoke;
+
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8000ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5a00b2;
+}
