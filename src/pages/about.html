@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acerca de Nosotros</title>
-    <link rel="stylesheet" href="/src/styles/globals.css" />
-    <link rel="stylesheet" href="/src/styles/index.css" />
-    <link rel="stylesheet" href="/src/styles/about.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/logos/ng-1.svg" />
+    <link rel="stylesheet" href="../styles/about.css" />
     <!-- box icons link -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -30,7 +30,7 @@
           </div>
           <div class="search-cart">
             <div>
-                <a id="cart-btn" href="./cart.html"
+              <a id="cart-btn" href="./cart.html"
                 ><i class="bx bx-cart-alt search-cart-btn"></i
               ></a>
             </div>
@@ -93,26 +93,39 @@
 
       <section class="contact">
         <h2>¡Contáctanos!</h2>
-        <form>
+        <form id="myForm">
           <div class="form-group">
-            <label for="name">Nombre</label>
+            <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" />
+            <div class="error-message" id="nameError"></div>
           </div>
           <div class="form-group">
-            <label for="phone">Teléfono</label>
+            <label for="phone">Teléfono:</label>
             <input type="text" id="phone" name="phone" />
+            <div class="error-message" id="phoneError"></div>
           </div>
           <div class="form-group">
-            <label for="email">E-mail</label>
+            <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" />
+            <div class="error-message" id="emailError"></div>
           </div>
           <div class="form-group">
-            <label for="subject">Asunto</label>
-            <input type="text" id="subject" name="subject" />
+            <label for="subject">Asunto:</label>
+            <select name="subject" id="subject">
+              <option value="" disabled selected>
+                Selecciona una opción...
+              </option>
+              <option value="negocios">Negocios</option>
+              <option value="empleo">Empleo</option>
+              <option value="soporte">Soporte</option>
+              <option value="otro">Otro</option>
+            </select>
+            <div class="error-message" id="subjectError"></div>
           </div>
           <div class="form-group">
-            <label for="message">Mensaje</label>
+            <label for="message">Mensaje:</label>
             <textarea id="message" name="message"></textarea>
+            <div class="error-message" id="messageError"></div>
           </div>
           <button type="submit">Enviar mensaje</button>
         </form>
@@ -161,6 +174,7 @@
         </div>
       </div>
     </footer>
-    <script src="/src/scripts/navbar.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/validations.js"></script>
   </body>
 </html>
