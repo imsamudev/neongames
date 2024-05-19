@@ -177,6 +177,7 @@ footer {
   background: radial-gradient(circle at center, #333, #000);
   color: var(--blanco);
   font-size: 0.7rem;
+  margin-top: 20px;
 }
 .container-footer {
   width: 95%;
@@ -193,7 +194,7 @@ footer {
   justify-content: center;
 }
 
-.brand img{
+.brand img {
   width: 64px;
   height: 64px;
 }
