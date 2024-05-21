@@ -115,7 +115,7 @@ input:focus {
   overflow: hidden;
   overflow-y: scroll;
 }
-::-webkit-scrollbar {
+.description::-webkit-scrollbar {
   width: 0px;
 }
 .title-card {
