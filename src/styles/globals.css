@@ -26,6 +26,36 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+p,
+label,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--azul-cielo);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
 /* button return to nav */
 .returnBtn {
   font-size: 3rem;
@@ -49,15 +79,12 @@ body {
   transition: all 0.5s;
 }
 
-/* navegation */
-header {
-  width: 100%;
-}
-
+/* navegation bar */
 .navbar {
+  position: relative;
   background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
   color: var(--blanco);
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .container-navigation {
@@ -84,7 +111,6 @@ header {
 }
 
 .search-cart {
-  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -93,10 +119,15 @@ header {
 }
 
 .search-cart-btn {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .navbar-links {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  flex-direction: column;
   display: none;
   align-items: center;
   text-align: center;
@@ -106,12 +137,16 @@ header {
 .navbar-links.active {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to right, #113bf4, #8600d8, #f113a8);
+  padding: 20px 0px;
+  font-size: 1.2rem;
+  z-index: 2;
 }
 
 .navbar-links a {
+  padding: 20px 10px;
   color: var(--blanco);
   text-decoration: none;
-  margin-right: 20px;
   transition: color 0.3s ease;
 }
 
@@ -253,21 +288,23 @@ footer {
   text-decoration: none;
 }
 
+/* Desktop Styles */
 @media (min-width: 768px) {
-  .search-cart {
-    width: 10%;
+  .navbar {
+    position: static;
   }
-
-  .search-cart-btn {
-    font-size: 2rem;
-  }
-
   .navbar-links {
     display: flex;
+    position: static;
+    flex-direction: row;
   }
 
   .hamburger-menu {
     display: none;
+  }
+
+  .navbar-links a {
+    padding: 10px;
   }
 
   .returnBtn {
@@ -276,41 +313,6 @@ footer {
     font-size: 4rem;
     height: 65px;
     width: 65px;
-  }
-
-  p,
-  label,
-  li,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: whitesmoke;
-  }
-}
-
-
-/* Desktop Styles */
-@media(min-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .hamburger-menu {
-    display: none;
-  }
-
-  .navbar-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: auto;
-  }
-
-  .navbar-links a {
-    padding: 0 15px;
   }
 
   .feature {
