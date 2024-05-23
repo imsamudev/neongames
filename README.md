@@ -1,4 +1,4 @@
-# software-team
+# NeonGames
 - Visita nuestra tienda online:
   https://imsamudev01.github.io/neongames/
   
